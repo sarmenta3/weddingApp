@@ -1,13 +1,29 @@
 import React, { useState } from 'react';
 import './homePage.css';
 import Popup from "../popUp/Popup";
+import RSVPForm from '../rsvpForm/rsvpForm';
 
 function HomePage() {
     const [showCrew, setShowCrew] = useState(false);
+    const [showPlacesToStay, setPlacesToStay] = useState(false);
+    const [showFood, setFood] = useState(false);
+    const [showRsvp, setRsvp] = useState(false);
 
 
     const handleShowCrewPopUp = () => {
         setShowCrew(!showCrew);
+    }
+
+    const handlePlacesToStay = () => {
+        setPlacesToStay(!showPlacesToStay);
+    }
+
+    const handleFood = () => {
+        setFood(!showFood);
+    }
+
+    const handleshowRsvp = () => {
+        setRsvp(!showRsvp);
     }
 
 
@@ -24,12 +40,12 @@ function HomePage() {
             <div className="intro">
                 <button onClick={handleShowCrewPopUp}> Meet The Crew</button>
                 <br/>
-                <button onClick={handleShowCrewPopUp}> Places to Stay</button>
+                <button onClick={handlePlacesToStay}> Places to Stay</button>
                 <br/>
-                <button onClick={handleShowCrewPopUp}> Food</button>
+                <button onClick={handleFood}> Food</button>
                 <br/>
-                <button onClick={handleShowCrewPopUp}> RSVP</button>
-                
+                <button onClick={handleshowRsvp}> RSVP</button>
+
             </div>
 
             {/* <div className="intro">
@@ -45,9 +61,27 @@ function HomePage() {
             </div> */}
 
             {showCrew && (
+                
                 <Popup onClose={handleShowCrewPopUp}>
-                    <h2>Welcome to the Popup!</h2>
-                    <p>This is some content inside the popup.</p>
+                    <p>more to come cres</p>
+                </Popup>
+            )}
+
+            {showPlacesToStay && (
+                <Popup onClose={handlePlacesToStay}>
+                    <p>more to come places to stay</p>
+                </Popup>
+            )}
+
+            {showFood && (
+                <Popup onClose={handleFood}>
+                    <p>more to come food</p>
+                </Popup>
+            )}
+
+            {showRsvp && (
+                <Popup onClose={handleshowRsvp}>
+                    <RSVPForm></RSVPForm>
                 </Popup>
             )}
 

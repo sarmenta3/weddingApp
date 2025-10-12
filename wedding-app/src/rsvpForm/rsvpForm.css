@@ -1,0 +1,8 @@
+.Form {
+    position: static; /* Essential for positioning the pseudo-element */
+    width: 100vw;
+    height: 100vh; /* Or whatever dimensions you need */
+    overflow: auto; /* To prevent the pseudo-element from overflowing if it has a larger size */
+    isolation: isolate; /* Creates a new stacking context for proper layering */
+    scrollbar-color: black;
+}

@@ -1,9 +1,10 @@
 .BackGround {
-      position: relative; /* Essential for positioning the pseudo-element */
+      position: static; /* Essential for positioning the pseudo-element */
       width: 100vw;
       height: 100vh; /* Or whatever dimensions you need */
-      overflow: hidden; /* To prevent the pseudo-element from overflowing if it has a larger size */
+      overflow: auto; /* To prevent the pseudo-element from overflowing if it has a larger size */
       isolation: isolate; /* Creates a new stacking context for proper layering */
+      scrollbar-color: black;
     }
 
 
@@ -15,10 +16,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode:screen;
+  background-attachment: fixed;
   opacity: .5;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   z-index: -1;
+  scrollbar-color: black;
 }
 
 .intro {
@@ -29,6 +32,7 @@
     color: black;
     width: 80%;
     margin-top: 4vh;
+    margin-bottom: 4vh;
     background-color: rgba(255, 255, 255, .5);
     border-radius: 15px 0px 15px 0px;
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;

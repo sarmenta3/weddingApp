@@ -1,0 +1,27 @@
+.BackGround {
+      position: relative; /* Essential for positioning the pseudo-element */
+      width: 100vw;
+      height: 100vh; /* Or whatever dimensions you need */
+      overflow: hidden; /* To prevent the pseudo-element from overflowing if it has a larger size */
+      isolation: isolate; /* Creates a new stacking context for proper layering */
+    }
+
+
+.BackGround::before {
+  content:'';
+  position: absolute;
+  background-image: url('../pictures/greeneVille.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .5;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.intro {
+    text-align: center;
+    color: black;
+}
+
+

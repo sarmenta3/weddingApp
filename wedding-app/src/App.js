@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './homePage/homePage';
 
 function App() {
   // return (
@@ -21,9 +21,8 @@ function App() {
   //   </div>
   // );
   return (
-    <div>
-    <h1>Well, I got it working!!! But now I have to build our app.</h1>
-    <h2> Love you honey!! Have a good time at work!!!</h2>
+    <div >
+      <HomePage></HomePage>
     </div>
   );
 }

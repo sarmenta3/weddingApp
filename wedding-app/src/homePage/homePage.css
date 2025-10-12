@@ -14,6 +14,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-blend-mode:screen;
   opacity: .5;
   height: 100vh;
   width: 100%;
@@ -21,8 +22,27 @@
 }
 
 .intro {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     color: black;
+    width: 80%;
+    margin-top: 4vh;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 15px 0px 15px 0px;
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    padding: 5px;
+    max-width: 1080px;
+
+    /* font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif; */
+        /* -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; */
+    /* flex-flow: row; */
+    /* display: flex; */
+        /* text-align: left; */
+
+    
 }
 
 

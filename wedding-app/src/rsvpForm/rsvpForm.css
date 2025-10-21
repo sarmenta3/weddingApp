@@ -1,8 +1,106 @@
 .Form {
-    position: static; /* Essential for positioning the pseudo-element */
-    width: 100vw;
-    height: 100vh; /* Or whatever dimensions you need */
+    position: static;
     overflow: auto; /* To prevent the pseudo-element from overflowing if it has a larger size */
     isolation: isolate; /* Creates a new stacking context for proper layering */
     scrollbar-color: black;
+}
+
+/* .Form:before {
+  content:'';
+  position: absolute;
+  background-image: url('../pictures/headTouch.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode:screen;
+  background-attachment: fixed;
+  opacity: .5;
+  height: 75%;
+  width: 100vw;
+  z-index: -1;
+  scrollbar-color: black;
+} */
+
+.welcomeMessage {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    width: 80%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    background-color: rgba(235, 8, 8, 0.5);
+    border-radius: 15px 0px 15px 0px;
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    padding: 5px;
+    max-width: 1080px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.TestInput {
+  padding: 10px; /* Adjust padding as needed */
+  background-color: whitesmoke;
+  color: black;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  background-color: rgba(71, 107, 57, 0.493);
+  font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+}
+
+.deleteButton {
+    padding: 4px;
+}
+
+.fileInputFormat {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    width: 80%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    background-color: rgba(235, 8, 8, 0.5);
+    border-radius: 15px 0px 15px 0px;
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    padding: 5px;
+    max-width: 1080px;
+    border: 2px solid black;
+    text-align: center;   
+}
+
+.name {
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: left;    /* Centers vertically */
+    padding: 10px;
+}
+
+.email {
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: left;    /* Centers vertically */
+    padding: 10px;
+}
+
+.PhoneNumber {
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: left;    /* Centers vertically */
+    padding: 10px;
+}
+
+.PlusOne{
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: left;    /* Centers vertically */
+    padding: 10px;
+}
+
+.PlusOneInfo{
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: left;    /* Centers vertically */
+    padding: 10px;
 }

@@ -31,20 +31,21 @@ function HomePage() {
         <div className="BackGround">
 
             <div className="intro">
-                <h3>Thank you for your love and support! We hope to see y'all there!!</h3>
-                <h3>Date: Eight Eight Twenty Twenty Six</h3>
-                <h3>Location: <a href="https://johnstonhomeplace.com/" target="_blank" rel="noreferrer">
-                    240 Joe Johnston Ln, Greeneville, TN 37743
+                <h3>Thank you for your love and support! We cannot wait to celebrate with you all in the same town where we got engaged!</h3>
+                <h3>Date: August 8, 2026</h3>
+                <h3>Venue: <a href="https://johnstonhomeplace.com/" target="_blank" rel="noreferrer">
+                    Johnston Home Place
                 </a></h3>
+                <h3>Address: <a>240 Joe Johnston Ln, Greeneville, TN 37743</a></h3>
             </div>
-            <div className="intro">
-                <button onClick={handleShowCrewPopUp}> Meet The Crew</button>
+            <div className="ButtonInto">
+                <button className="button" onClick={handleShowCrewPopUp}> Meet The Crew</button>
                 <br/>
-                <button onClick={handlePlacesToStay}> Places to Stay</button>
+                <button className="button" onClick={handlePlacesToStay}> Places to Stay</button>
                 <br/>
-                <button onClick={handleFood}> Food</button>
+                <button className="button" onClick={handleFood}> Food</button>
                 <br/>
-                <button onClick={handleshowRsvp}> RSVP</button>
+                <button className="button" onClick={handleshowRsvp}> RSVP</button>
 
             </div>
 

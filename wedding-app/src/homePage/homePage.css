@@ -25,7 +25,7 @@
 }
 
 .intro {
-    background-color: white;
+
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -38,6 +38,7 @@
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
     padding: 5px;
     max-width: 1080px;
+    border: 2px solid black;
 
     /* font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif; */
         /* -webkit-box-orient: horizontal;
@@ -45,8 +46,39 @@
     /* flex-flow: row; */
     /* display: flex; */
         /* text-align: left; */
+}
 
-    
+.ButtonInto {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    width: 20%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 15px 0px 15px 0px;
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    padding: 5px;
+    max-width: 1080px;
+}
+
+.button {
+  width: auto; /* or a percentage like 50% for responsiveness */
+  height: auto;
+  font-size: 80%;
+  padding: 10px; /* Adjust padding as needed */
+  background-color: whitesmoke;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  background-color: rgba(71, 107, 57, 0.493);
+  font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+  max-width: 1080px;
 }
 
 

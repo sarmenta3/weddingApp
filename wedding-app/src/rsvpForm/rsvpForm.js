@@ -51,7 +51,7 @@ function RSVPForm({onClose}) {
                             <div  className = 'form-nameInput' key={index}>
                                
                                 <input
-                                    className='form-TestInput'
+                                    className='form-TextInput'
                                     type="text"
                                     value={field.value}
                                     onChange={(e) => handleInputChange(e, index)}
@@ -73,21 +73,21 @@ function RSVPForm({onClose}) {
                             Phone Number:
                             
                         </label>
-                        <input className='form-TestInput' type="text"></input>
+                        <input className='form-TextInput' type="text"></input>
                     </div>
 
                     <div className='form-PhoneNumber'>
                         <label>
                             Address:
                         </label>
-                        <input className='form-TestInput' type="text"></input>
+                        <input className='form-TextInput' type="text"></input>
                     </div>
 
                     <div className='form-email'>
                         <label>
                             Email:
                         </label>
-                        <input className='form-TestInput' type="text"></input>
+                        <input className='form-TextInput' type="text"></input>
                     </div>
 
                 </div>

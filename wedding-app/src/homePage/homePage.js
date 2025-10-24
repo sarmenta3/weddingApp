@@ -49,18 +49,6 @@ function HomePage() {
 
             </div>
 
-            {/* <div className="intro">
-                <h3>Places to stay:</h3>
-            </div>
-
-            <div className="intro">
-                <h3>RSVP</h3>
-            </div>
-
-            <div className="intro">
-                <h3>Food</h3>
-            </div> */}
-
             {showCrew && (
                 
                 <Popup onClose={handleShowCrewPopUp}>
@@ -81,9 +69,11 @@ function HomePage() {
             )}
 
             {showRsvp && (
-                <Popup onClose={handleshowRsvp}>
-                    <RSVPForm></RSVPForm>
-                </Popup>
+                
+                    <RSVPForm
+                        onClose={handleshowRsvp}
+                    />
+                
             )}
 
 

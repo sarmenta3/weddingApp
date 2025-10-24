@@ -1,19 +1,10 @@
 import React, { useState } from 'react';
 import './rsvpForm.css';
 
-function RSVPForm() {
+function RSVPForm({onClose}) {
 
-    const [isChecked, setIsChecked] = useState(false);
     const [guest, setGuest] = useState([{value: ''}]);
-
-    const handleOnCheckbox = () => {
-        setIsChecked(!isChecked)
-    }
-
-    const setGuestName = (name) => {
-        console.log('Anything: ', name.target.value);
-        //     setGuest(name.targer.value);
-    }
+    const [close, setClose] = useState (false);
 
     const handleAddField = () => {
       setGuest([...guest, { value: '' }]);
@@ -30,66 +21,79 @@ function RSVPForm() {
       setGuest(newFields);
     };
 
+    const handleSetClose = () => {
+        onClose();
+        setClose(!close);
+    }
+    
+    return  ( !close &&
+        <div className='form'>
+            <div className = 'form-content'>
 
-    return (
-        <div className='Form'>
+                {/* exit button  */}
+                 <button className ='form-button' onClick={() => handleSetClose() }>X</button>
 
-            <div className='welcomeMessage'>
-                <p>Thank you for attending our wedding, you mean so much to us!<br />
-                    Please fill out your infomation below. Children are welcome to celebrate with us!</p>
-            </div>
-
-            <div className='fileInputFormat'>
-                <div className='name'>
-                    <label>
-                        Name of guest:
-                    </label>
+                <div className='form-welcomeMessage'>
+                    <p>Thank you for attending our wedding, you mean so much to us!<br />
+                        Please fill out your infomation below. Children are welcome to celebrate with us!</p>
                 </div>
 
-                <div >
-                    {guest.map((field, index) => (
-                        <div  key={index}>
-                            <input
-                                className='TestInput'
-                                type="text"
-                                value={field.value}
-                                onChange={(e) => handleInputChange(e, index)}
-                            />
-                   
-                            <button 
-                            type="button" 
-                            classN = 'deleteButton'
-                            onClick={() => handleRemoveField(index)}>
-                                Remove
-                            </button>
-                        </div>
-                    ))}
+                <div className='form-fileInputFormat'>
+                    <div className='form-name'>
+                        <label >
+                            Name of guest:
+                        </label>
+                        <button className='form-deleteButton' onClick = {handleAddField}>Add</button>
+                    </div>    
+                    
+
+                    <div >
+                        {guest.map((field, index) => (
+                            <div  className = 'form-nameInput' key={index}>
+                               
+                                <input
+                                    className='form-TestInput'
+                                    type="text"
+                                    value={field.value}
+                                    onChange={(e) => handleInputChange(e, index)}
+                                />
+                                
+                                <button 
+                                type="button" 
+                                className = 'form-deleteButton'
+                                onClick={() => handleRemoveField(index)}>
+                                    X
+                                </button>
+                                
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className='form-PhoneNumber'>
+                        <label>
+                            Phone Number:
+                            
+                        </label>
+                        <input className='form-TestInput' type="text"></input>
+                    </div>
+
+                    <div className='form-PhoneNumber'>
+                        <label>
+                            Address:
+                        </label>
+                        <input className='form-TestInput' type="text"></input>
+                    </div>
+
+                    <div className='form-email'>
+                        <label>
+                            Email:
+                        </label>
+                        <input className='form-TestInput' type="text"></input>
+                    </div>
+
                 </div>
 
-                <div>
-                    <button onClick = {handleAddField}>Add</button>
-                </div>
-
-                <div className='PhoneNumber'>
-                    <label>
-                        Phone Number:
-                        <input className='TestInput' type="text"></input>
-                    </label>
-                </div>
-
-                <div className='PhoneNumber'>
-                    <label>
-                        Address:
-                        <input className='TestInput' type="text"></input>
-                    </label>
-                </div>
-
-                <div className='email'>
-                    <label>
-                        Email:
-                        <input className='TestInput' type="text"></input>
-                    </label>
-                </div>
+                {/* <button className ='form-button' onClick={() =>setClose(!close)}>Close</button> */}
 
             </div>
 

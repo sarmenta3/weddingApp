@@ -1,9 +1,39 @@
-.Form {
-    position: static;
-    overflow: auto; /* To prevent the pseudo-element from overflowing if it has a larger size */
-    isolation: isolate; /* Creates a new stacking context for proper layering */
-    scrollbar-color: black;
+.form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other content */
 }
+
+.form-content {
+  background-color: white;
+  width: 95vw;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+
+/* .Form {
+    position: static;
+    overflow: auto; 
+    isolation: isolate; 
+    scrollbar-color: black;
+    height: 100%;
+} */
 
 /* .Form:before {
   content:'';
@@ -21,7 +51,7 @@
   scrollbar-color: black;
 } */
 
-.welcomeMessage {
+.form-welcomeMessage {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -33,27 +63,12 @@
     border-radius: 15px 0px 15px 0px;
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
     padding: 5px;
-    max-width: 1080px;
+    max-width: 600px;
     border: 2px solid black;
     text-align: center;
 }
 
-.TestInput {
-  padding: 10px; /* Adjust padding as needed */
-  background-color: whitesmoke;
-  color: black;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  text-align: center;
-  background-color: rgba(71, 107, 57, 0.493);
-  font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
-}
-
-.deleteButton {
-    padding: 4px;
-}
-
-.fileInputFormat {
+.form-fileInputFormat {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -65,42 +80,101 @@
     border-radius: 15px 0px 15px 0px;
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
     padding: 5px;
-    max-width: 1080px;
+    max-width: 350px;
     border: 2px solid black;
     text-align: center;   
 }
 
-.name {
-    display: flex;
-    justify-content: left; /* Centers horizontally */
-    align-items: left;    /* Centers vertically */
+.form-TestInput {
     padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    background-color: rgba(71, 107, 57, 0.493);
+    font-family: 'Alegreya SC', Georgia, "Times New Roman", serif;
+ 
 }
 
-.email {
-    display: flex;
-    justify-content: left; /* Centers horizontally */
-    align-items: left;    /* Centers vertically */
-    padding: 10px;
+.form-addButton {
+    padding:  5px;
+
+    /* width: auto; 
+    height: auto; */
+    font-size: 80%;
+    padding: 10px; 
+    background-color: whitesmoke;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    background-color: rgba(71, 107, 57, 0.493);
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    max-width: 1080px;
 }
 
-.PhoneNumber {
-    display: flex;
-    justify-content: left; /* Centers horizontally */
-    align-items: left;    /* Centers vertically */
-    padding: 10px;
+.form-button {
+    float: right;
 }
 
-.PlusOne{
+.form-deleteButton {
+    padding: 4px;
+    width: auto; /* or a percentage like 50% for responsiveness */
+    height: auto;
+    font-size: 80%;
+    background-color: whitesmoke;
+    color: black;
+    background-color: rgba(71, 107, 57, 0.493);
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    max-width: 1080px;
+    }
+
+
+
+.form-name {
     display: flex;
     justify-content: left; /* Centers horizontally */
     align-items: left;    /* Centers vertically */
-    padding: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 10px; /* Adds space between the input and button */
 }
 
-.PlusOneInfo{
+.form-email {
     display: flex;
     justify-content: left; /* Centers horizontally */
     align-items: left;    /* Centers vertically */
     padding: 10px;
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 10px; /* Adds space between the input and button */
+}
+
+.form-PhoneNumber {
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: left;    /* Centers vertically */
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 10px; /* Adds space between the input and button */
+}
+
+.form-nameInput {
+    display: flex;
+    justify-content: left; /* Centers horizontally */
+    align-items: left;    /* Centers vertically */
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 10px; /* Adds space between the input and button */
+}
+
+.padding {
+    padding: 3px
 }

@@ -71,7 +71,6 @@ function RSVPForm({onClose}) {
                     <div className='form-PhoneNumber'>
                         <label>
                             Phone Number:
-                            
                         </label>
                         <input className='form-TextInput' type="text"></input>
                     </div>

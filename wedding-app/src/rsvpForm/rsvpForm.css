@@ -63,7 +63,7 @@
     border-radius: 15px 0px 15px 0px;
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
     padding: 5px;
-    max-width: 600px;
+    max-width: 60vw;
     border: 2px solid black;
     text-align: center;
 }
@@ -73,14 +73,14 @@
     margin-right: auto;
     text-align: center;
     color: black;
-    width: 80%;
+    width: 350px;
     margin-top: 4vh;
     margin-bottom: 4vh;
     background-color: rgba(235, 8, 8, 0.5);
     border-radius: 15px 0px 15px 0px;
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
     padding: 5px;
-    max-width: 350px;
+
     border: 2px solid black;
     text-align: center;   
 }
@@ -99,9 +99,6 @@
 
 .form-addButton {
     padding:  5px;
-
-    /* width: auto; 
-    height: auto; */
     font-size: 80%;
     padding: 10px; 
     background-color: whitesmoke;
@@ -113,7 +110,6 @@
     text-align: center;
     background-color: rgba(71, 107, 57, 0.493);
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
-    max-width: 1080px;
 }
 
 .form-button {
@@ -129,7 +125,6 @@
     color: black;
     background-color: rgba(71, 107, 57, 0.493);
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
-    max-width: 1080px;
     }
 
 
@@ -146,11 +141,11 @@
     gap: 10px; /* Adds space between the input and button */
 }
 
-.form-email {
+.form-nameInput {
+    padding-left: 5px;
     display: flex;
     justify-content: left; /* Centers horizontally */
     align-items: left;    /* Centers vertically */
-    padding: 10px;
     display: flex;
     align-items: center; /* Vertically centers the items */
     gap: 10px; /* Adds space between the input and button */
@@ -160,21 +155,18 @@
     display: flex;
     justify-content: left; /* Centers horizontally */
     align-items: left;    /* Centers vertically */
-    padding: 10px;
+    padding-left: 5px;
     display: flex;
     align-items: center; /* Vertically centers the items */
     gap: 10px; /* Adds space between the input and button */
 }
 
-.form-nameInput {
+.form-email {
     display: flex;
     justify-content: left; /* Centers horizontally */
     align-items: left;    /* Centers vertically */
+    padding-left: 5px;
     display: flex;
     align-items: center; /* Vertically centers the items */
     gap: 10px; /* Adds space between the input and button */
-}
-
-.padding {
-    padding: 3px
 }

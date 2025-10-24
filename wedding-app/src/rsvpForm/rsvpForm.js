@@ -46,7 +46,6 @@ function RSVPForm({onClose}) {
                         <button className='form-deleteButton' onClick = {handleAddField}>Add</button>
                     </div>    
                     
-
                     <div >
                         {guest.map((field, index) => (
                             <div  className = 'form-nameInput' key={index}>

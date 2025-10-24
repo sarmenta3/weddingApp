@@ -85,18 +85,6 @@
     text-align: center;   
 }
 
-.form-TestInput {
-    padding: 10px;
-    background-color: whitesmoke;
-    color: black;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    text-align: center;
-    background-color: rgba(71, 107, 57, 0.493);
-    font-family: 'Alegreya SC', Georgia, "Times New Roman", serif;
- 
-}
-
 .form-addButton {
     padding:  5px;
     font-size: 80%;
@@ -172,4 +160,16 @@
     display: flex;
     align-items: center; /* Vertically centers the items */
     gap: 10px; /* Adds space between the input and button */
+}
+
+.form-TextInput {
+    width: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    background-color: rgba(71, 107, 57, 0.493);
+    font-family: 'Alegreya SC', Georgia, "Times New Roman", serif;
 }

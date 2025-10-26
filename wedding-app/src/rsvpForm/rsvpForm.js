@@ -31,7 +31,7 @@ function RSVPForm({onClose}) {
             <div className = 'form-content'>
 
                 {/* exit button  */}
-                 <button className ='form-button' onClick={() => handleSetClose() }>X</button>
+                 <button className ='form-exit-button' onClick={() => handleSetClose() }>X</button>
 
                 <div className='form-welcomeMessage'>
                     <p>Thank you for attending our wedding, you mean so much to us!<br />
@@ -43,7 +43,7 @@ function RSVPForm({onClose}) {
                         <label >
                             Name of guest:
                         </label>
-                        <button className='form-deleteButton' onClick = {handleAddField}>Add</button>
+                        <button className='form-addNameButton' onClick = {handleAddField}>Add</button>
                     </div>    
                     
                     <div >
@@ -59,7 +59,7 @@ function RSVPForm({onClose}) {
                                 
                                 <button 
                                 type="button" 
-                                className = 'form-deleteButton'
+                                className = 'form-name-deleteButton'
                                 onClick={() => handleRemoveField(index)}>
                                     X
                                 </button>

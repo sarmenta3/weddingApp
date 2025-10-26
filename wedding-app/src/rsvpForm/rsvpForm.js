@@ -89,9 +89,11 @@ function RSVPForm({onClose}) {
                         <input className='form-TextInput' type="text"></input>
                     </div>
 
-                </div>
+                    <div className='form-submit'>    
+                    <button className ='form-submit-button' onClick={() =>handleSetClose(!close)}>Submit</button>
+                    </div>
 
-                {/* <button className ='form-button' onClick={() =>setClose(!close)}>Close</button> */}
+                </div>
 
             </div>
 

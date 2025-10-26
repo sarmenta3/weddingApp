@@ -15,7 +15,7 @@
 .form:before {
   content:'';
   position: absolute;
-  background-image: url('../pictures/street.jpg');
+  background-image: url('../pictures/closeUpInStreet.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -49,13 +49,13 @@
     color: black;
     width: 80%;
     margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-bottom: 1vh;
     /* background-color: rgba(71, 107, 57, 0.493); */
      background-color: rgba(255, 255, 255, 0.705);
     border-radius: 15px 0px 15px 0px;
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
     padding: 5px;
-    max-width: 60vw;
+    max-width: 350px;
     border: 2px solid black;
     text-align: center;
 }
@@ -66,8 +66,6 @@
     text-align: center;
     color: black;
     width: 80%;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
     /* background-color: rgba(71, 107, 57, 0.493); */
     background-color: rgba(255, 255, 255, 0.705);
     border-radius: 15px 0px 15px 0px;

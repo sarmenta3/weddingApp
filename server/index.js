@@ -10,10 +10,11 @@ app.use(cors());
 
 var db = mysql.createPool({
     connectionLimit: 10,
-    host: 'localhost',
+    host: '18.191.187.235', // when local: localhost
     user: 'root',
     password: 'EightEight26!',
-    database:'wedding_guest'
+    database:'wedding_guest',
+    port: 3306 // when local: comment this out
 })
 
 app.post('/addGuest', (req, res) => {
@@ -33,7 +34,8 @@ app.post('/addGuest', (req, res) => {
     })                                          
 })
 
-app.listen(8080, () => {
+const port = 3000; //when local: 8080
+app.listen(port, () => {
     console.log('Server listening on port 8080')
 });
 

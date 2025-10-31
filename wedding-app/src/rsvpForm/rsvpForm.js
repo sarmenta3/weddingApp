@@ -45,22 +45,17 @@ function RSVPForm({ onClose }) {
 
         Object.values(guest).forEach(guestName => {
             const name = guestName.name;
-            axios.post('http://localhost:8080/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+            axios.post('http://18.191.187.235/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
                  address:address, email:email })
                 .then((data) => {
                     console.log(data);
                 });
         });
 
-        onClose();
         setClose(!close);
     }
 
     const requiredField = () => {
-        console.log('Wht is this value, ', (guest[0].name.length ))
-        console.log('Wht is this value, ', (phoneNumber.length))
-        console.log('Wht is this value, ', ( address.length))
-        console.log('Wht is this value, ', (email.length))
         return (guest[0].name.length && phoneNumber.length && address.length && email.length) && true;
     }
 

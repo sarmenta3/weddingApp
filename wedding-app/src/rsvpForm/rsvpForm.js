@@ -45,7 +45,7 @@ function RSVPForm({ onClose }) {
 
         Object.values(guest).forEach(guestName => {
             const name = guestName.name;
-            axios.post('http://18.191.187.235:8080/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+            axios.post('http://18.191.187.235:3000/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
                  address:address, email:email })
                 .then((response) => {
                     console.log(response.data);

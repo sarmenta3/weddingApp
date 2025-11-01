@@ -60,7 +60,7 @@ function RSVPForm({ onClose }) {
                         }
                     });
         });
-
+        onClose();
         setClose(!close);
     }
 

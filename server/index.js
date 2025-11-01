@@ -34,8 +34,8 @@ app.post('/addGuest', (req, res) => {
     })                                          
 })
 
-const port = 8080; //when local: 8080
+const port = 3000; //when local: 8080
 app.listen(port, () => {
-    console.log('Server listening on port 8080')
+    console.log('Server listening on port 3000')
 });
 

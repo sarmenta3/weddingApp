@@ -10,7 +10,7 @@ app.use(cors());
 
 var db = mysql.createPool({
     connectionLimit: 10,
-    host: '18.191.187.235', // when local: localhost
+    host: 'localhost', // when local: localhost
     user: 'appUser',
     password: 'EightEight26!',
     database:'wedding_guest',

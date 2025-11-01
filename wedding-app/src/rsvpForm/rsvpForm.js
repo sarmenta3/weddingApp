@@ -47,9 +47,18 @@ function RSVPForm({ onClose }) {
             const name = guestName.name;
             axios.post('http://18.191.187.235:8080/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
                  address:address, email:email })
-                .then((data) => {
-                    console.log(data);
-                });
+                .then((response) => {
+                    console.log(response.data);
+                })
+                    .catch( error => {
+                        if(error.response) {
+                            console.log('error response: ', error.response);
+                        } else if(error.request) {
+                            console.log('Error request: ', error.request);
+                        } else {
+                            console.log('Error message: ', error.message);
+                        }
+                    });
         });
 
         setClose(!close);

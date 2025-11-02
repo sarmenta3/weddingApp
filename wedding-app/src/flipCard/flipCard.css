@@ -1,0 +1,63 @@
+.flip-card-container {
+  /* width: 300px;
+  height: 400px; */
+  /* Adds a 3D perspective to the container so the rotation looks 3D */
+  perspective: 1000px; 
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  /* width: 70%;
+  height: 70%; */
+  text-align: center;
+  transition: transform 0.6s; /* Smooth transition for the flip */
+  transform-style: preserve-3d; /* Ensures the back face is hidden when rotated */
+}
+
+/* Rotates the inner container when the 'flipped' class is applied */
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+
+  width: 70%;
+  height: 70%;
+  /* Hides the back side of an element when facing away from the user */
+  backface-visibility: hidden; 
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
+}
+
+.flip-card-front {
+  /* background-color: #bbb; */
+}
+
+.flip-card-back {
+  background-color: rgba(255, 255, 255, 0.705);
+  color: black;
+  /* Rotates the back side initially so it starts facing inwards, 
+     then rotates to face the user when the parent is flipped */
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.card-image {
+  margin-top: 2vh;
+  width: 95%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-info {
+  /* margin-top: 2vh;
+  width: 50vw;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 10px; */
+}

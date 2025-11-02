@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './homePage.css';
-import Popup from "../popUp/Popup";
+
 import RSVPForm from '../rsvpForm/rsvpForm';
+import StayAndFlights from '../PlacesToStayAndFlights/stayAndFlights';
+import TheCrew from '../theCrew/theCrew';
 
 function HomePage() {
     const [showCrew, setShowCrew] = useState(false);
@@ -51,22 +53,20 @@ function HomePage() {
 
             {showCrew && (
                 
-                <Popup onClose={handleShowCrewPopUp}>
-                    <p>more to come cres</p>
-                </Popup>
+                <TheCrew
+                    onClose={handleShowCrewPopUp}
+                />
             )}
 
             {showPlacesToStay && (
-                <Popup onClose={handlePlacesToStay}>
-                    <p>more to come places to stay</p>
-                </Popup>
+                <StayAndFlights
+                    onClose={handlePlacesToStay}
+                />
             )}
 
-            {showFood && (
-                <Popup onClose={handleFood}>
-                    <p>more to come food</p>
-                </Popup>
-            )}
+            {/* {showFood && (
+             
+            )} */}
 
             {showRsvp && (
                 

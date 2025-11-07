@@ -51,6 +51,9 @@ function StayAndFlights({ onClose }) {
                 <div className='placesToStay'>
                     {/* Main header */}
                     <h1>Places to stay</h1>
+                    <p>If you are traveling as a family, I found that Airbnb and Vrbo a great places to find
+                        a large house and seems to be a cheaper way to stay!!
+                    </p>
 
                     {/* General morgal */}
                     <h5><a href="http://www.generalmorganinn.com/" target="_blank" rel="noreferrer">General Morgan</a></h5>

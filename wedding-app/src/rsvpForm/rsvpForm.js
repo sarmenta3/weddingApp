@@ -139,11 +139,21 @@ function RSVPForm({ onClose }) {
                             Email:
                         </label>
                         <input
-                            placeholder='CantWaitToSeeYou@GT.com'
+                            placeholder='CU@GT.com'
                             className='form-TextInput'
                             type="email"
                             onChange={(e) => handleEmail(e)}
                         />
+                    </div>
+
+                    <label>Dietary Restrictions:</label>    
+                    <div >
+                        <textarea 
+                        style={{height: '10vh', width: '90%'}}
+                        placeholder='Please let us know if you have dietary restrictions.' 
+                        
+                        >
+                        </textarea>
                     </div>
 
                     <div className='form-submit'>
@@ -156,6 +166,20 @@ function RSVPForm({ onClose }) {
                     </div>
 
                 </div>
+                
+                <div className='form-fileInputFormat'>
+                    <label>Kind Words about the couple:</label>    
+                    <div >
+                        <textarea 
+                        style={{height: '10vh', width: '90%'}}
+                        placeholder='If you want to say anything to us!' 
+                        
+                        >
+                        </textarea>
+                    </div>
+                </div>
+
+                 
 
             </div>
 

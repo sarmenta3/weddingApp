@@ -4,12 +4,14 @@ import './homePage.css';
 import RSVPForm from '../rsvpForm/rsvpForm';
 import StayAndFlights from '../PlacesToStayAndFlights/stayAndFlights';
 import TheCrew from '../theCrew/theCrew';
+import Activities from '../Activities/activities';
 
 function HomePage() {
     const [showCrew, setShowCrew] = useState(false);
     const [showPlacesToStay, setPlacesToStay] = useState(false);
     const [showFood, setFood] = useState(false);
     const [showRsvp, setRsvp] = useState(false);
+    const [showActivities, setShowActivities] = useState(false);
 
 
     const handleShowCrewPopUp = () => {
@@ -26,6 +28,10 @@ function HomePage() {
 
     const handleshowRsvp = () => {
         setRsvp(!showRsvp);
+    }
+
+    const handleShowActivites = () => {
+        setShowActivities(!showActivities);
     }
 
 
@@ -45,7 +51,7 @@ function HomePage() {
                 <br/>
                 <button className="button" onClick={handlePlacesToStay}> Places to Stay</button>
                 <br/>
-                <button className="button" onClick={handleFood}> Food</button>
+                <button className="button" onClick={handleShowActivites}> Activities </button>
                 <br/>
                 <button className="button" onClick={handleshowRsvp}> RSVP</button>
 
@@ -64,16 +70,16 @@ function HomePage() {
                 />
             )}
 
-            {/* {showFood && (
-             
-            )} */}
+            {showActivities && (
+                <Activities
+                 onClose = {handleShowActivites}
+                 />
+            )}
 
             {showRsvp && (
-                
-                    <RSVPForm
-                        onClose={handleshowRsvp}
-                    />
-                
+                <RSVPForm
+                    onClose={handleshowRsvp}
+                />
             )}
 
 

@@ -1,0 +1,78 @@
+.greenevilleBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000; 
+}
+
+.greenevilleBackground:before {
+  content:'';
+  position: absolute;
+  background-image: url('../../pictures/home.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode:screen;
+  background-attachment: fixed;
+  /* background-size: contain; */
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.greeneville-content {
+  width: 95vw;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: auto;
+  scrollbar-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* ================================
+===============buttons==========
+================================
+================================ */
+.greeneville-exit-button {
+    /* float: right; */
+    padding: 6px;
+    /* margin-left: 50%; */
+    /* width: auto;
+    height: auto; */
+    font-size: 80%;
+    color: black;
+    background-color: rgba(216, 19, 19, 0.493);
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    /* max-width: 100px; */
+    position: absolute;
+    right: 19%;
+}
+
+.greeneville-info {
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 15px 0px 15px 0px;
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    padding: 5px;
+    max-width: 350px;
+    border: 2px solid black;
+    text-align: center;  
+    margin-top: 4vh;
+    max-width: 600px;
+}
+

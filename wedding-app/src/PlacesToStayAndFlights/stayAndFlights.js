@@ -101,9 +101,6 @@ function StayAndFlights({ onClose }) {
 
                 </div>
 
-
-
-
             </div>
         </div> // back ground end
     )

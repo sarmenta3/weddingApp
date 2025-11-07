@@ -111,8 +111,8 @@ function Greeneville({onClose}) {
                      Tennessee Hills Brewstillery</a>
                     </ul>
                 <ul>Brew:
-                    <a href="Yee-Haw Brewing Company" target="_blank" rel="noreferrer">
-                     Troyer's Mountain View Country Market</a>
+                    <a href="https://share.google/FWcOYmix24DWH3SrL" target="_blank" rel="noreferrer">
+                     Yee-Haw Brewing Company</a>
                     </ul>
                 <ul>food:
                     <a href="https://share.google/GBxoieAWw6DKckTSA" target="_blank" rel="noreferrer">

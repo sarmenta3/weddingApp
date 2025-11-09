@@ -132,6 +132,7 @@ function Greeneville({onClose}) {
                 <button className='greeneville-exit-button' onClick={() => handleSetClose()}>X</button>
                 <div className="greeneville-info">
                     <p>Tell them about the Vull</p>
+                    <p>(Click the pic's)</p>
                 </div>
 
                 {/*We have reach the Vull*/}

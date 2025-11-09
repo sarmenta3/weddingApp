@@ -78,6 +78,7 @@ function TenTrip({onClose}) {
                 <button className='tenTrip-exit-button' onClick={() => handleSetClose()}>X</button>
                 <div className="tenTrip-info">
                     <p>If you would like to make an adventure out of this trip here is what I would do...</p>
+                    <p>(Click the pic's)</p>
                 </div>
                 
                 {/* Nashville */}

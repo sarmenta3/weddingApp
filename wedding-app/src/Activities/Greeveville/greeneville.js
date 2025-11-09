@@ -29,31 +29,31 @@ function Greeneville({onClose}) {
             </p>
 
             <p>Few things to do in this small town:</p>
-            <list>
-                <ul>Hike: 
+            <ul className="greeneville-list">
+                <li>Hike: 
                     <a href="https://share.google/SFLojTdUZ1ktNO2b6" target="_blank" rel="noreferrer"> 
                     Margarette Falls Trail</a>
-                    </ul>
-                <ul>Explore: 
+                    </li>
+                <li>Explore: 
                     <a href="https://share.google/YRGi6kVPGrCSLb3jw" target="_blank" rel="noreferrer">
                     Andrew Johnson Homestead</a>
-                    </ul>
-                <ul>Brew: 
+                    </li>
+                <li>Brew: 
                     <a href="https://share.google/IAhAKkphQXrtVwAzV" target="_blank" rel="noreferrer">
                     The Gentry</a>
-                    </ul>
-                <ul>Brew and Food: 
+                    </li>
+                <li>Brew and Food: 
                     <a href="https://share.google/AYhnxl5uPchNCdRBd" target="_blank" rel="noreferrer">
                     Rock City Tap & Lounge and Food Truck</a>
-                </ul>
-                <ul>Brew and Food: 
+                </li>
+                <li>Brew and Food: 
                     <a href="https://share.google/AYhnxl5uPchNCdRBd" target="_blank" rel="noreferrer">
                     Old Oak Taproom</a>
-                </ul>
-                <ul>food: <a href="https://share.google/H7NbI2m4xSC1xBE3g" target="_blank" rel="noreferrer">
+                </li>
+                <li>food: <a href="https://share.google/H7NbI2m4xSC1xBE3g" target="_blank" rel="noreferrer">
                 Thai's Joy</a>
-                </ul>
-            </list>
+                </li>
+            </ul>
         </div>
     );
 
@@ -67,24 +67,24 @@ function Greeneville({onClose}) {
                 Auntie Ruth's Doughnuts & Pretzels for a good little snack, its right off the hwy.
             </p>
              <p>Few things to do in this small town:</p>
-            <list>
-                <ul>Coffee/Ice cream:
+            <ul className="greeneville-list">
+                <li>Coffee/Ice cream:
                     <a href="https://share.google/ZFCJouHFQCfGvsDWe" target="_blank" rel="noreferrer"> 
                      Neuma Coffee</a>
-                    </ul>
-                <ul>Distillery:
+                    </li>
+                <li>Distillery:
                     <a href="https://share.google/eotuaJX4A6oYLGxK1" target="_blank" rel="noreferrer">
                      Tennessee Hills Distillery</a>
-                    </ul>
-                <ul>food:
+                    </li>
+                <li>food:
                     <a href="https://share.google/Z7kV1HfkC7ktzB4dU" target="_blank" rel="noreferrer">
                      Troyer's Mountain View Country Market</a>
-                    </ul>
-                <ul>food:
+                    </li>
+                <li>food:
                     <a href="https://share.google/851YcS4H1y2E3Hi3Q" target="_blank" rel="noreferrer">
                      Auntie Ruth's Doughnuts & Pretzels</a>
-                </ul>
-            </list>
+                </li>
+            </ul>
         </div>
     );
 
@@ -101,24 +101,24 @@ function Greeneville({onClose}) {
             </p>
 
             <p>Few things to do in this big small town:</p>
-            <list>
-                <ul>Coffee and Tacos... Whaaat:
+            <ul className="greeneville-list">
+                <li>Coffee and Tacos... Whaaat:
                     <a href="https://share.google/dPbiNmQ2eSk4d3FHb" target="_blank" rel="noreferrer"> 
                      Fearless Coffee & Kitchen</a>
-                    </ul>
-                <ul>Brewstillery:
+                    </li>
+                <li>Brewstillery:
                     <a href="https://share.google/MxTKXQVLEEokFwfmm" target="_blank" rel="noreferrer">
                      Tennessee Hills Brewstillery</a>
-                    </ul>
-                <ul>Brew:
+                    </li>
+                <li>Brew:
                     <a href="https://share.google/FWcOYmix24DWH3SrL" target="_blank" rel="noreferrer">
                      Yee-Haw Brewing Company</a>
-                    </ul>
-                <ul>food:
+                    </li>
+                <li>food:
                     <a href="https://share.google/GBxoieAWw6DKckTSA" target="_blank" rel="noreferrer">
                      White Duck Taco Shop</a>
-                </ul>
-            </list>
+                </li>
+            </ul>
         </div>
     );
 
@@ -170,8 +170,6 @@ function Greeneville({onClose}) {
                 </div>
 
             </div>
-
-
         </div> // back ground end
     )
 

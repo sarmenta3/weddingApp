@@ -12,30 +12,37 @@ function HomePage() {
     const [showFood, setFood] = useState(false);
     const [showRsvp, setRsvp] = useState(false);
     const [showActivities, setShowActivities] = useState(false);
+    const [isSelected, setIsSelected] = useState(false)
 
 
     const handleShowCrewPopUp = () => {
+        setIsSelected(!isSelected);
         setShowCrew(!showCrew);
     }
 
     const handlePlacesToStay = () => {
+        setIsSelected(!isSelected);
         setPlacesToStay(!showPlacesToStay);
     }
 
     const handleFood = () => {
+        setIsSelected(!isSelected);
         setFood(!showFood);
     }
 
     const handleshowRsvp = () => {
+        setIsSelected(!isSelected);
         setRsvp(!showRsvp);
     }
 
     const handleShowActivites = () => {
+        setIsSelected(!isSelected);
         setShowActivities(!showActivities);
     }
 
 
-    return (
+    if(!isSelected){
+        return (
         <div className="BackGround">
 
             <div className="intro">
@@ -57,7 +64,15 @@ function HomePage() {
 
             </div>
 
-            {showCrew && (
+           
+
+
+        </div>
+    );
+    } else {
+        return(
+            <div>
+             {showCrew && (
                 
                 <TheCrew
                     onClose={handleShowCrewPopUp}
@@ -81,9 +96,9 @@ function HomePage() {
                     onClose={handleshowRsvp}
                 />
             )}
-
-
         </div>
-    );
+        )
+    }
+    
 }
 export default HomePage;

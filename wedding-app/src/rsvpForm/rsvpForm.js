@@ -59,10 +59,11 @@ function RSVPForm({ onClose }) {
 
     const handleSetClose = () => {
         let mainGuestName = guest[0].name;
-
+// https://www.armentabe.com/
+//http://18.191.187.235
         Object.values(guest).forEach(guestName => {
             const name = guestName.name;
-            axios.post('http://18.191.187.235:8080/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+            axios.post('https://www.armentabe.com:8080/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
                  address:address, email:email, diet: diet, kindWords:kindWords })
                 .then((response) => {
                 })

@@ -56,7 +56,7 @@ function HomePage() {
             <div className="ButtonInto">
                 <button className="button" onClick={handleShowCrewPopUp}> Meet The Crew</button>
                 <br/>
-                <button className="button" onClick={handlePlacesToStay}> Places to Stay</button>
+                <button className="button" onClick={handlePlacesToStay}> Flights and Places to Stay</button>
                 <br/>
                 <button className="button" onClick={handleShowActivites}> Activities </button>
                 <br/>

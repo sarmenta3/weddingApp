@@ -1,29 +1,27 @@
 .greenevilleBackground {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 1000; 
+  position: static; /* Essential for positioning the pseudo-element */
+      width: 100vw;
+      height: 100vh; /* Or whatever dimensions you need */
+      overflow: auto; /* To prevent the pseudo-element from overflowing if it has a larger size */
+      isolation: isolate; /* Creates a new stacking context for proper layering */
+      scrollbar-color: black;
 }
 
 .greenevilleBackground:before {
   content:'';
   position: absolute;
   background-image: url('../../pictures/home.jpg');
-  background-size: 100vw 100vh;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode:screen;
   background-attachment: fixed;
-  /* background-size: contain; */
+  background-size: 100vw 100vh;
+  /* opacity: .5; */
   height: 100vh;
   width: 100vw;
   z-index: -1;
+  scrollbar-color: black;
 }
 
 .greeneville-content {

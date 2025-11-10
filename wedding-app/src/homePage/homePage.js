@@ -64,9 +64,6 @@ function HomePage() {
 
             </div>
 
-           
-
-
         </div>
     );
     } else {

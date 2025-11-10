@@ -37,6 +37,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+  margin-bottom: 2px;
 }
 
 /* ================================
@@ -59,7 +60,7 @@
 }
 
 .theCrew-info {
-    margin-bottom: 4vh;
+    margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;

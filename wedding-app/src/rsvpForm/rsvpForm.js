@@ -116,8 +116,6 @@ function RSVPForm({ onClose }) {
                                     onChange={(e) => handleNameInput(e, index)}
                                 />
 
-                                {console.log('What is index: ', index)}
-
                                 <div>
                                 {index ? (     
                                 <button

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './rsvpForm.css';
 import axios from 'axios'
+import Popup from '../popUp/Popup';
 
-function RSVPForm({ onClose }) {
+function RSVPForm({ onClose, isError }) {
 
     const [guest, setGuest] = useState([{ name: '' }]);
     const [phoneNumber, setPhoneNumber] = useState({ phoneNumber: '' });
@@ -42,12 +43,12 @@ function RSVPForm({ onClose }) {
         setEmail(email);
     };
 
-     const handleDiet = (e) => {
+    const handleDiet = (e) => {
         const diet = e.target.value;
         setDiet(diet);
     };
 
-     const handleKindWords = (e) => {
+    const handleKindWords = (e) => {
         const kindWords = e.target.value;
         setKindWords(kindWords);
     };
@@ -57,29 +58,78 @@ function RSVPForm({ onClose }) {
         setClose(!close);
     }
 
-    const handleSetClose = () => {
+    const handleSetClose = async () => {
         let mainGuestName = guest[0].name;
-// https://www.armentabe.com/
-//https://18.191.187.235
-        Object.values(guest).forEach(guestName => {
-            const name = guestName.name;
-            axios.post('https://armentabe.com/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
-                 address:address, email:email, diet: diet, kindWords:kindWords })
-                .then((response) => {
-                })
-                    .catch( error => {
-                        if(error.response) {
-                            console.log('error response: ', error.response);
-                        } else if(error.request) {
-                            console.log('Error request: ', error.request);
-                        } else {
-                            console.log('Error message: ', error.message);
-                        }
-                    });
-        });
+        // https://www.armentabe.com/
+        //https://18.191.187.235
+
+        // Object.values(guest).forEach(async guestName => {
+        //     const name = guestName.name;
+
+        //     try{
+        //     const r =  await axios.post('https://armentaberrrr.com/addGuest', {
+        //         mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+        //         address: address, email: email, diet: diet, kindWords: kindWords
+        //     });
+        //     }catch(error){
+        //         console.log(error)
+                
+        //     }
+            
+        //     // const r = await axios.post('https://armentaberrrr.com/addGuest', {
+        //     //     mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+        //     //     address: address, email: email, diet: diet, kindWords: kindWords
+        //     // })
+        //     //     .then((response) => {
+                   
+        //     //     })
+        //     //     .catch(error => {
+        //     //         setAddGuestError(true)
+        //     //         console.log('There was an error')
+        //     //     });
+        //     // addUser(mainGuestName, name);
+
+        // });
+        // const allGuest = 
+        for(const g of Object.values(guest) ){
+            const name = g.name;
+             try{
+            const r =  await axios.post('https://armentabe.com/addGuest', {
+                mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+                address: address, email: email, diet: diet, kindWords: kindWords
+            });
+            }catch(error){
+                isError(true)
+                console.log('We have an error')
+            }
+        }
+
         onClose();
         setClose(!close);
     }
+
+    // async function addUser(mainGuestName, name) {
+    //     // try {
+    //         const r = await axios.post('https://yrdy.com/addGuest', {
+    //             mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+    //             address: address, email: email, diet: diet, kindWords: kindWords
+    //         }).then((response) => {
+    //             console.log('No Error')
+    //             return true;
+    //         }).catch(error =>{
+    //             console.log('Error')
+    //             setAddGuestError(true);
+    //             return false;
+    //         });
+
+            
+    //     // } catch (error) {
+    //     //     console('There is an error')
+    //     //     setAddGuestError(true);
+    //     //     return false;
+    //     // }
+
+    // }
 
     const requiredField = () => {
         return (guest[0].name.length && phoneNumber.length && address.length && email.length) && true;
@@ -117,13 +167,13 @@ function RSVPForm({ onClose }) {
                                 />
 
                                 <div>
-                                {index ? (     
-                                <button
-                                    type="button"
-                                    className='form-name-deleteButton'
-                                    onClick={() => handleRemoveName(index)}>
-                                    Remove Guest
-                                </button>) : ''}
+                                    {index ? (
+                                        <button
+                                            type="button"
+                                            className='form-name-deleteButton'
+                                            onClick={() => handleRemoveName(index)}>
+                                            Remove Guest
+                                        </button>) : ''}
                                 </div>
 
                             </div>
@@ -163,39 +213,26 @@ function RSVPForm({ onClose }) {
                         />
                     </div>
 
-                    <label>Dietary Restrictions:</label>    
+                    <label>Dietary Restrictions:</label>
                     <div >
-                        <textarea 
-                        style={{height: '10vh', width: '90%'}}
-                        placeholder='Please let us know if you have dietary restrictions.' 
-                        onChange={(e) => handleDiet(e)}
+                        <textarea
+                            style={{ height: '10vh', width: '90%' }}
+                            placeholder='Please let us know if you have dietary restrictions.'
+                            onChange={(e) => handleDiet(e)}
                         >
                         </textarea>
                     </div>
 
                     <div className='form-submit'>
-                        <button 
-                        className= {requiredField() 
-                            ? 'form-submit-button'
-                            : 'form-notvalid-submit-button' 
-                            } 
-                        onClick={() => handleSetClose(!close)}>Submit</button>
+                        <button
+                            className={requiredField()
+                                ? 'form-submit-button'
+                                : 'form-notvalid-submit-button'
+                            }
+                            onClick={() => handleSetClose(!close)}>Submit</button>
                     </div>
 
                 </div>
-                
-                {/* <div className='form-fileInputFormat'>
-                    <label>Kind Words about the couple:</label>    
-                    <div >
-                        <textarea 
-                        style={{height: '10vh', width: '90%'}}
-                        placeholder='If you want to say anything to us!'
-                        onChange={(e) => handleKindWords(e)} 
-                        
-                        >
-                        </textarea>
-                    </div>
-                </div> */}
 
             </div>
 

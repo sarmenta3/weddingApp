@@ -5,6 +5,7 @@ import RSVPForm from '../rsvpForm/rsvpForm';
 import StayAndFlights from '../PlacesToStayAndFlights/stayAndFlights';
 import TheCrew from '../theCrew/theCrew';
 import Activities from '../Activities/activities';
+import Popup from '../popUp/Popup';
 
 function HomePage() {
     const [showCrew, setShowCrew] = useState(false);
@@ -13,6 +14,8 @@ function HomePage() {
     const [showRsvp, setRsvp] = useState(false);
     const [showActivities, setShowActivities] = useState(false);
     const [isSelected, setIsSelected] = useState(false)
+
+    const [isCreatGuestError, setIsCreatGuestError] = useState(false);
 
 
     const handleShowCrewPopUp = () => {
@@ -40,8 +43,16 @@ function HomePage() {
         setShowActivities(!showActivities);
     }
 
+    const handleIsCreatGuestError = (isError) => {
+        console.log('What is the error: ', isError) ;
+        setIsCreatGuestError(isError)
+    }
+    const closePopUp = () => {
+        setIsCreatGuestError(false)
+    }
 
-    if(!isSelected){
+
+    if(!isSelected) {
         return (
         <div className="BackGround">
 
@@ -63,6 +74,13 @@ function HomePage() {
                 <button className="button" onClick={handleshowRsvp}> RSVP</button>
 
             </div>
+
+            { isCreatGuestError && <div>
+                    <Popup onClose={closePopUp}>
+                        <h3>Yikes!!!</h3>
+                        <p>Sorry An error occured when trying to add you as guest. Try again, or contact Jeki or Sam</p>
+                    </Popup>
+                </div>}
 
         </div>
     );
@@ -91,6 +109,7 @@ function HomePage() {
             {showRsvp && (
                 <RSVPForm
                     onClose={handleshowRsvp}
+                    isError = {handleIsCreatGuestError}
                 />
             )}
         </div>

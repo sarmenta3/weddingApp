@@ -100,7 +100,7 @@ function RSVPForm({ onClose }) {
                 <div className='form-fileInputFormat'>
                     <div className='form-name'>
                         <label >
-                            Name of guest:
+                            Name of Guest(s):
                         </label>
                         <button className='form-addNameButton' onClick={handleAddName}>Add Guest</button>
                     </div>
@@ -111,7 +111,6 @@ function RSVPForm({ onClose }) {
 
                                 <input
                                     className='form-TextInput'
-                                    placeholder='First & Last Name'
                                     type="text"
                                     value={field.value}
                                     onChange={(e) => handleNameInput(e, index)}
@@ -136,7 +135,6 @@ function RSVPForm({ onClose }) {
                             Phone Number:
                         </label>
                         <input
-                        placeholder='(000)-000-0000'
                             className='form-TextInput'
                             type="text"
                             onChange={(e) => handlePhoneNumber(e)}
@@ -148,7 +146,6 @@ function RSVPForm({ onClose }) {
                             Address:
                         </label>
                         <input
-                            placeholder='Address City State Zip'
                             className='form-TextInput'
                             type="text"
                             onChange={(e) => handleAdress(e)}
@@ -160,7 +157,6 @@ function RSVPForm({ onClose }) {
                             Email:
                         </label>
                         <input
-                            placeholder='CU@GT.com'
                             className='form-TextInput'
                             type="email"
                             onChange={(e) => handleEmail(e)}

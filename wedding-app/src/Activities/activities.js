@@ -35,12 +35,12 @@ function Activities({ onClose }) {
                     <button className='adventure-exit-button' onClick={() => handleSetClose()}>X</button>
 
                     <div className="adventure-info">
-                        <p>If you would like to make an adventure out of this trip here is what I would do...</p>
+                        <p>If you would like to make an adventure out of this trip this is what we would do...</p>
                         <button className="button" onClick={handleShowTenTrip}> Travel Tennesee</button>
                     </div>
 
                     <div className="adventure-info">
-                        <p>Things to do near and Around Greeneville</p>
+                        <p>Things to do near and around Greeneville...</p>
                         <button className="button" onClick={handleShowGreeneville}> Greeneville Activities</button>
                     </div>
 

@@ -21,9 +21,9 @@ function TenTrip({onClose}) {
     const theVull = (
         <div>
             <h1>Nashville</h1>
-            <p>Nashville has so much to offer. Tons of museumes, food and a night life. 
-                BNB are everywhere around the area. Taking a stroll around the city will leave you 
-                stuned. 
+            <p>Nashville has so much to offer. Tons of museums, amazing food, and wild night life. 
+                Airbnbs are everywhere around the area. Taking a stroll around the city will leave you 
+                stunned. 
             </p>
         </div>
     );
@@ -31,11 +31,11 @@ function TenTrip({onClose}) {
     const theNooga = (
         <div>
             <h1>Chattanooga</h1>
-            <p>Chattanooga is the perfect mix of city and out doors. There are museums, great food, and so much lovely
-                walking spots. The city due to flooding has been built on top of itself ovet the centeries. You are in a city
-                surounded by the apalacha. Hikes are everywhere and food is plentyfull. I also plan to complete my first
-                70.1 ironman here in May!! My lovely sister and her Husband live here and love it!! It's kind of like
-                SF or Austin of the South... Stay weird!
+            <p>Chattanooga is the perfect mix of city  and outdoors. There are museums, great food, and so many lovely
+                walking spots. The city due to flooding has been built on top of itself over the centeries. You are in a city
+                surounded by the Appalachian Mountains. Hikes are abundant and food is plentiful. Fun Fact: Sam is planning to compete in his first
+                70.1 Ironman here in May 2026! Also, Sam's lovely sister and her husband live here and love it! It's kind of like
+                the SF or Austin of the South...Stay weird!
             </p>
         </div>
     );
@@ -43,7 +43,7 @@ function TenTrip({onClose}) {
     const sevier = (
         <div>
             <h1>Sevierville</h1>
-            <p>Sevierville is starting to get closser to home
+            <p>Sevierville is starting to get closer to home.
             </p>
         </div>
     );
@@ -51,7 +51,7 @@ function TenTrip({onClose}) {
     const gatlin = (
         <div>
             <h1>Gatlinburg</h1>
-            <p>Gatlinburg is starting to get closser to home
+            <p>Gatlinburg is starting to get closer to home.
             </p>
         </div>
     );
@@ -59,11 +59,10 @@ function TenTrip({onClose}) {
     const homeDis = (
         <div>
             <h1>Greeneville</h1>
-            <p>This is an picture is a section of my parent property in Greeneville TN. I can not wait foreveryone to visit 
-                this little town. During the cival war Greeneville held both Union and Souther soldres and 
-                as you can imagin made for a lot of history. Andrew Johnson 'The president that took over after Lincon'
-                lived in this town and you are able to tour his home. Its very slow paced in this town, and you will find
-                time is now set to Tennesee. 
+            <p>This photo displays a portion of Sam's parents' property in Greeneville, TN. We cannot wait for everyone to visit 
+                this cute little town! On December 23, 2024 Sam dropped on one knee and proposed to Jelena during "family Christmas photos" on this property so it's a very special place to us. During the Civil War Greeneville held both Union and Southern soldiers and 
+                as you can imagine is rich in American history. Andrew Johnson was the 17th President of the United States, who assumed office on April 15, 1865, following the assassination of Abraham Lincoln. Johnson, a War Democrat who ran as Lincoln's vice president on the National Union Party ticket in 1864, served until March 4, 1869. Andrew Johnson also happened to live in this town and you are able to tour his home. It's a very slow paced town and you will find
+                time is now set to Tennesee time. 
             </p>
         </div>
     );
@@ -77,13 +76,13 @@ function TenTrip({onClose}) {
                 {/* exit button  and close function*/}
                 <button className='tenTrip-exit-button' onClick={() => handleSetClose()}>X</button>
                 <div className="tenTrip-info">
-                    <p>If you would like to make an adventure out of this trip here is what I would do...</p>
-                    <p>(Click the pic's)</p>
+                    <p>If you would like to make an adventure out of this trip this is what we would do...</p>
+                    <p>(Click on the photos for more details)</p>
                 </div>
                 
                 {/* Nashville */}
                 <div className='tenTrip-info'>
-                    <p>Start with flying into Nashville the home of country music</p>
+                    <p>Start with flying into Nashville, the home of country music.</p>
                     <div className='member'>
                         <FlipCard
                             frontImage={nashville}
@@ -105,8 +104,8 @@ function TenTrip({onClose}) {
 
                 {/*Sevierville/Gatlinburg */}
                 <div className='tenTrip-info'>
-                    <p>Starting to get close to the destination.
-                        Sevierville and Gatlinburg are close to each other </p>
+                    <p>Starting to get close to the wedding destination.
+                        Sevierville and Gatlinburg are close to one another. </p>
                     <div className='member'>
                         <FlipCard
                             frontImage={Sevierville}
@@ -124,8 +123,8 @@ function TenTrip({onClose}) {
 
                 {/*We have reach the Vull*/}
                 <div className='tenTrip-info'>
-                    <p>Aww, Home! You have now reach what Tenneseens call Tennesee!</p>
-                    <p>Blue skies never ending days and Gods country</p>
+                    <p>Aww, home sweet home! You have now reached what Tennesseans call Tennesee!</p>
+                    <p>Blue skies, never ending days, and God's country.</p>
                     <div className='member'>
                         <FlipCard
                             frontImage={home}

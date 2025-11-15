@@ -35,11 +35,7 @@ function TheCrew({ onClose }) {
     const sam = (
         <div>
             <h1>Jeki</h1>
-            <p>Hey I am Sam hope you come to enjoy yourself. Honestly
-                I dont know wht to write but I just want to see what happens.
-                I work for LM hope to BBQ and throw a wedding you will not forget.
-                Should we have monkies? Bears? 90 rock stars?
-                IDK lets sEE!!!!
+            <p>Hello friends and family! I am so thrilled and honored to be surrounded by you all on our special day! There have been so many of you who have championed mine and Samuel's relationship since 2015 and for that I am forever grateful. I wanted to take time to give a special shoutout to my lovely bridemaids, many who have been rockin' with me since we were children (25+ years of friendship and counting). 
             </p>
         </div>
     );
@@ -61,7 +57,7 @@ function TheCrew({ onClose }) {
             <p>Spending time with Jelena and Sam is like being around two old fictional souls. They look out for you, even while lost with no cell service in the middle of Colorado. They care about your hopes, future and dreams - even if you sound delusional. They’ll dive into long conversations about the books that have moved you. They’ve loved my son as if he were their own family. They’ll make you laugh until you can’t breathe, then cook a meal from scratch and stay up all night in the kitchen sharing stories, laughter, and tears in ways that embrace the quiet and simple act of friendship that is hard to find.</p>
             <p>These two souls belong together.</p>
             <p>Thank you to both Sam and Jelena for these moments from now until forever. I am beyond excited to witness your marriage.</p>
-            <p>~ Nikki</p>
+            <p></p>
         </div>
     )
 
@@ -75,7 +71,7 @@ function TheCrew({ onClose }) {
     const crystal = (
         <div>
             <h1>Crystal</h1>
-            <p>It’s hard to pin point the start of my friendship with Jelena because for more than 25 years she has always been there as my constant, my confidant and my sister! We met in the third grade and through every year and milestone of life Jelena has been forever loyal, honest, compassionate, hilarious, protective and kind. It’s been beautifully inspiring to watch my best friend find true love with Sam who holds all those qualities and more. I am so blessed to be a part of Jelena and Sam’s special day and get to witness two people who value, respect and love each other say, “I do”!Two people who treat their friends and family like gold; just imagine how they treat each other! May God bless Sam and Jelena today and everyday! Now let’s party!</p>
+            <p>It’s hard to pin point the start of my friendship with Jelena because for more than 25 years she has always been there as my constant, my confidant and my sister! We met in the third grade and through every year and milestone of life Jelena has been forever loyal, honest, compassionate, hilarious, protective and kind. Its been beautifully inspiring to watch my best friend find true love with Sam who holds all those qualities and more. I am so blessed to be a part of Jelena and Sam’s special day and get to witness two people who value, respect and love each other say, “I do”! Two people who treat their friends and family like gold; just imagine how they treat each other! May God bless Sam and Jelena today and everyday! Now let’s party!</p>
         </div>
     )
 
@@ -90,16 +86,16 @@ function TheCrew({ onClose }) {
 
 
                 <div className='theCrew-info'>
-                    <p>(click the pic's)</p>
+                    <p>(Click on the photos for more details)</p>
                     {/* <button className='theCrew-exit-button' onClick={() => handleSetClose()}>X</button> */}
-                    <h1>The main event</h1>
+                    <h1>The Bride</h1>
                     <div className='member'>
                         <FlipCard
                             frontImage={pic2}
                             backInfo={sam}
                         />
                     </div>
-                    <h1>And Her Peeps</h1>
+                    <h1>The Bridesmaids</h1>
                     <div className='member'>
                         <FlipCard
                             frontImage={nikkiPic}
@@ -121,14 +117,14 @@ function TheCrew({ onClose }) {
                 </div>
 
                 <div className='theCrew-info'>
-                    <h1>The Gents</h1>
+                    <h1>The Groom</h1>
                     <div className='member'>
                         <FlipCard
                             frontImage={Sam}
                             backInfo={sam}
                         />
                     </div>
-                    <h1>And Her Peeps</h1>
+                    <h1>The Gents</h1>
                     <div className='member'>
                         <FlipCard
                             frontImage={Sam}

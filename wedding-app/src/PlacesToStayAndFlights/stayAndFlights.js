@@ -27,7 +27,7 @@ function StayAndFlights({ onClose }) {
                 <div className='flights'>
                     <h1>Flights</h1>
 
-                    <p>When coming to visit Greeneville TN the airports we usually fly into are:</p>
+                    <p>When coming to visit Greeneville TN the airports we usually fly into are the following:</p>
 
                     {/* list of plces */}
                     <div className='flights-list'>
@@ -41,24 +41,24 @@ function StayAndFlights({ onClose }) {
                         </ul>
                     </div>
 
-                    <p> I usually book using<a href="https://www.google.com/travel/flights"> Google Flights</a>
-                        which has a flight alert you can set to monitor drops in tickets. Currently flights seem to be a little high
-                        but should drop 4-6 months before the wedding. Keep you eyes out. If you have any good sights to buy flights
-                        from please send them out way and we can add them!!! Thanks! </p>
+                    <p> We usually book using<a href="https://www.google.com/travel/flights"> Google Flights</a>
+                         which has a flight alert you can set to monitor drops in ticket prices. Currently flights seem to be a little high
+                        but should drop 4-6 months prior to the wedding. Keep you eyes out. If you know of any good websites to buy flights
+                        from please send them our way and we can add them to our website! Thanks! </p>
                 </div>
 
                 {/* places to stay */}
                 <div className='placesToStay'>
                     {/* Main header */}
-                    <h1>Places to stay</h1>
-                    <p>If you are traveling as a family, I found that Airbnb and Vrbo a great places to find
-                        a large house and seems to be a cheaper way to stay!!
+                    <h1>Places to Stay</h1>
+                    <p>If you are traveling as a family, we found that Airbnb and Vrbo are great places to find
+                        a large house and seem to be a cheaper way to stay!
                     </p>
 
                     {/* General morgal */}
                     <h5><a href="http://www.generalmorganinn.com/" target="_blank" rel="noreferrer">General Morgan</a></h5>
-                    <p>Located in Downtown Greeneville and ~16 min form the vinue.
-                        We tried to block rooms and see if we could get guest a discount.
+                    <p>Located in Downtown Greeneville and ~16 min form the venue.
+                        We tried to block rooms and see if we could get a guest discount.
                         However, they were not willing to work with us. We found Expedia
                         had cheaper prices than what they were offering.
                     </p>

@@ -20,12 +20,11 @@ function Greeneville({onClose}) {
     const homeDis = (
         <div>
             <h1>Greeneville</h1>
-            <p>This is an picture is a section of my parent property in 
-                <a href="https://maps.app.goo.gl/dHgGf7foxLhirSdf6" target="_blank" rel="noreferrer"> Greeneville TN.</a> I can not wait foreveryone to visit 
-                this little town. During the cival war Greeneville held both Union and Souther soldres and 
-                as you can imagin made for a lot of history. Andrew Johnson 'The president that took over after Lincon'
-                lived in this town and you are able to tour his home. Its very slow paced in this town, and you will find
-                time is now set to Tennesee. 
+            <p> 
+                <a href="https://maps.app.goo.gl/dHgGf7foxLhirSdf6" target="_blank" rel="noreferrer"> Greeneville TN.</a> We cannot wait for everyone to visit 
+                this cute little town! On December 23, 2024 Sam dropped on one knee and proposed to Jelena during "family Christmas photos" on this property so it's a very special place to us. During the Civil War Greeneville held both Union and Southern soldiers and 
+                as you can imagine is rich in American history. Andrew Johnson was the 17th President of the United States, who assumed office on April 15, 1865, following the assassination of Abraham Lincoln. Johnson, a War Democrat who ran as Lincoln's vice president on the National Union Party ticket in 1864, served until March 4, 1869. Andrew Johnson also happened to live in this town and you are able to tour his home. It's a very slow paced town and you will find
+                time is now set to Tennesee time. 
             </p>
 
             <p>Few things to do in this small town:</p>
@@ -50,7 +49,7 @@ function Greeneville({onClose}) {
                     <a href="https://share.google/AYhnxl5uPchNCdRBd" target="_blank" rel="noreferrer">
                     Old Oak Taproom</a>
                 </li>
-                <li>food: <a href="https://share.google/H7NbI2m4xSC1xBE3g" target="_blank" rel="noreferrer">
+                <li>Food: <a href="https://share.google/H7NbI2m4xSC1xBE3g" target="_blank" rel="noreferrer">
                 Thai's Joy</a>
                 </li>
             </ul>
@@ -60,15 +59,15 @@ function Greeneville({onClose}) {
      const jonesborough = (
         <div>
             <h1>Jonesborough</h1>
-            <p><a href="https://maps.app.goo.gl/rs3MnvpaBb3yJpxQ7" target="_blank" rel="noreferrer">Jonesborough</a> is a cute little town with some good Coffee and Ice cream. They have cute downtwon with cute stores.
-                Tennesee Hills, a distillary that has gorown over the years, is located in this town and is one of my favorites.
-                If you happen to be sitting at the bar when a train goes by, $1 shots is comming your way. From here head to 
-                Johnson City for some good food and events. Make sure you make a pit stop at Troyer's Mountain View Country Market/
-                Auntie Ruth's Doughnuts & Pretzels for a good little snack, its right off the hwy.
+            <p><a href="https://maps.app.goo.gl/rs3MnvpaBb3yJpxQ7" target="_blank" rel="noreferrer">Jonesborough</a> is a cute little town with some good coffee and ice cream. They have an adorable downtown area with a lot of cutesy shops.
+                Tennesee Hills, a distillary that has grown over the years, is located in this town and is one of our favorites.
+                If you happen to be sitting at the bar when a train goes by, $1 shots are comming your way. From here head to 
+                Johnson City for some more yummy food and events. Make sure you make a pit stop at Troyer's Mountain View Country Market/
+                Auntie Ruth's Doughnuts & Pretzels for a delicious little snack, it's right off the highway!
             </p>
              <p>Few things to do in this small town:</p>
             <ul className="greeneville-list">
-                <li>Coffee/Ice cream:
+                <li>Coffee/Ice Cream:
                     <a href="https://share.google/ZFCJouHFQCfGvsDWe" target="_blank" rel="noreferrer"> 
                      Neuma Coffee</a>
                     </li>
@@ -76,11 +75,11 @@ function Greeneville({onClose}) {
                     <a href="https://share.google/eotuaJX4A6oYLGxK1" target="_blank" rel="noreferrer">
                      Tennessee Hills Distillery</a>
                     </li>
-                <li>food:
+                <li>Food:
                     <a href="https://share.google/Z7kV1HfkC7ktzB4dU" target="_blank" rel="noreferrer">
                      Troyer's Mountain View Country Market</a>
                     </li>
-                <li>food:
+                <li>Food:
                     <a href="https://share.google/851YcS4H1y2E3Hi3Q" target="_blank" rel="noreferrer">
                      Auntie Ruth's Doughnuts & Pretzels</a>
                 </li>
@@ -91,18 +90,18 @@ function Greeneville({onClose}) {
      const johnsonCity = (
         <div>
             <h1>Johnson City</h1>
-            <p>Walking to the south out of Roanoke caught a trucker out of Philly, had a nice long toke
-            But he's a-headed west from the Cumberland gap To 
-            <a href="https://maps.app.goo.gl/aDvkhENbj1FwkyQ98" target="_blank" rel="noreferrer"> Johnson City, Tennessee </a>  - Darius Rucker.</p>
+            <p>"Walking to the south out of Roanoke caught a trucker out of Philly, had a nice long toke
+            But he's a-headed west from the Cumberland gap to 
+            <a href="https://maps.app.goo.gl/aDvkhENbj1FwkyQ98" target="_blank" rel="noreferrer"> Johnson City, Tennessee." </a>      ~ Darius Rucker.</p>
 
-            <p>This is the biggest of the small towns. You will find a night life, food, coffee, sports bar and drinks. In August the town usually will have a concert
-            in the park. Tennessee Hills has their Brewstillery here where they serve beer and the good stuff. So head down to JC and, Rock me, mama, like a wagon wheel
-             Rock me, mama, any way you feel!!
+            <p>This is the biggest of the small towns. You will find night life, food, coffee, sports bars, and strong drinks. In August, the town usually has concerts
+            in the park. Tennessee Hills has their Brewstillery here where they serve beer and the good stuff. So head down to Johnson City and rock me mama like a wagon wheel,
+             rock me mama any way you feel!
             </p>
 
             <p>Few things to do in this big small town:</p>
             <ul className="greeneville-list">
-                <li>Coffee and Tacos... Whaaat:
+                <li>Coffee and Tacos:
                     <a href="https://share.google/dPbiNmQ2eSk4d3FHb" target="_blank" rel="noreferrer"> 
                      Fearless Coffee & Kitchen</a>
                     </li>
@@ -114,7 +113,7 @@ function Greeneville({onClose}) {
                     <a href="https://share.google/FWcOYmix24DWH3SrL" target="_blank" rel="noreferrer">
                      Yee-Haw Brewing Company</a>
                     </li>
-                <li>food:
+                <li>Food:
                     <a href="https://share.google/GBxoieAWw6DKckTSA" target="_blank" rel="noreferrer">
                      White Duck Taco Shop</a>
                 </li>
@@ -131,11 +130,11 @@ function Greeneville({onClose}) {
                 {/* exit button  and close function*/}
                 <button className='greeneville-exit-button' onClick={() => handleSetClose()}>X</button>
                 <div className="greeneville-info">
-                    <p>Tell them about the Vull</p>
-                    <p>(Click the pic's)</p>
+                    <p>Tell them about the Vol</p>
+                    <p>(Click on the photos for more details)</p>
                 </div>
 
-                {/*We have reach the Vull*/}
+                {/*We have reached the Vol*/}
                 <div className='greeneville-info'>
                     <p>Greeneville Things</p>
 

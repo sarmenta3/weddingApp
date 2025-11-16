@@ -88,7 +88,7 @@ function RSVPForm({ onClose, isError }) {
             const name = g.name;
             if (name) {
                 try {
-                    const r = await axios.post('https://armentabedddd.com/addGuest', {
+                    const r = await axios.post('https://armentabe.com/addGuest', {
                         mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
                         address: address, email: email, diet: diet
                     });

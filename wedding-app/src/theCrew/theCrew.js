@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './theCrew.css';
 
-import Sam from '../pictures/cousin1.JPEG'
 // ladies
 import jekiPic from '../pictures/jeki.jpg'
 import nikkiPic from '../pictures/nikki.jpg'
@@ -188,7 +187,7 @@ function TheCrew({ onClose }) {
 
      const noah = (
         <div>
-            <h1>Naoh</h1>
+            <h1>Noah</h1>
             <p></p>
         </div>
     )

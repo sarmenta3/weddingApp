@@ -5,7 +5,7 @@ import RSVPForm from '../rsvpForm/rsvpForm';
 import StayAndFlights from '../PlacesToStayAndFlights/stayAndFlights';
 import TheCrew from '../theCrew/theCrew';
 import Activities from '../Activities/activities';
-import Popup from '../popUp/Popup';
+
 
 function HomePage() {
     const [showCrew, setShowCrew] = useState(false);
@@ -14,7 +14,7 @@ function HomePage() {
     const [showActivities, setShowActivities] = useState(false);
     const [isSelected, setIsSelected] = useState(false)
 
-    const [isCreatGuestError, setIsCreatGuestError] = useState(null);
+    // const [isCreatGuestError, setIsCreatGuestError] = useState(null);
 
 
     const handleShowCrewPopUp = () => {
@@ -37,12 +37,12 @@ function HomePage() {
         setShowActivities(!showActivities);
     }
 
-    const handleIsCreatGuestError = (isError) => {
-        setIsCreatGuestError(isError)
-    }
-    const closePopUp = () => {
-        setIsCreatGuestError(null)
-    }
+    // const handleIsCreatGuestError = (isError) => {
+    //     setIsCreatGuestError(isError)
+    // }
+    // const closePopUp = () => {
+    //     setIsCreatGuestError(null)
+    // }
 
     if (!isSelected) {
         return (
@@ -67,7 +67,7 @@ function HomePage() {
 
                 </div>
 
-                {isCreatGuestError === false && <div>
+                {/* {isCreatGuestError === false && <div>
                     <Popup onClose={closePopUp}
                         showClose={true}
                     >
@@ -83,7 +83,7 @@ function HomePage() {
                         <h3>Yikes!!!</h3>
                         <p>Sorry, a error occured when trying to add you. Try again, or contact Jeki or Sam</p>
                     </Popup>
-                </div>}
+                </div>} */}
 
 
 
@@ -113,7 +113,6 @@ function HomePage() {
 
                 {showRsvp && (
                     <RSVPForm
-                        isRsvpError={handleIsCreatGuestError}
                         onClose={handleshowRsvp}
                     />
                 )}

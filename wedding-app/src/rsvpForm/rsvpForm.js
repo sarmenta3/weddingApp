@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './rsvpForm.css';
 import axios from 'axios'
 
-function RSVPForm({ onClose, isRsvpError}) {
+function RSVPForm({ onClose}) {
 
     const [guest, setGuest] = useState([{ name: '' }]);
     const [phoneNumber, setPhoneNumber] = useState({ phoneNumber: '' });
@@ -61,9 +61,7 @@ function RSVPForm({ onClose, isRsvpError}) {
             axios.post('https://armentabe.com/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
                  address:address, email:email, diet: diet })
                 .then((response) => {
-                    isRsvpError(false)
                 }).catch( error => {
-                        isRsvpError(true)
                         if(error.response) {
                             console.log('error response: ', error.response);
                         } else if(error.request) {

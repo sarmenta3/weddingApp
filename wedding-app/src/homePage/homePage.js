@@ -86,7 +86,7 @@ function HomePage() {
                     </Popup>
                 </div>}
 
-            { !isPw && <div>
+            {/* { !isPw && <div>
                     <Popup 
                         onClose={closePopUp}
                         showClose={false}
@@ -100,7 +100,7 @@ function HomePage() {
                             onChange={(e) => handleSetPw(e)}
                         />
                     </Popup>
-                </div>}    
+                </div>}     */}
 
         </div>
     );

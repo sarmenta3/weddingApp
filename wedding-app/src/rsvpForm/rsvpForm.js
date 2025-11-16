@@ -56,76 +56,27 @@ function RSVPForm({ onClose, isError }) {
         // https://www.armentabe.com/
         //https://18.191.187.235
 
-        // Object.values(guest).forEach(async guestName => {
-        //     const name = guestName.name;
-
-        //     try{
-        //     const r =  await axios.post('https://armentaberrrr.com/addGuest', {
-        //         mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
-        //         address: address, email: email, diet: diet, kindWords: kindWords
-        //     });
-        //     }catch(error){
-        //         console.log(error)
-
-        //     }
-
-        //     // const r = await axios.post('https://armentaberrrr.com/addGuest', {
-        //     //     mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
-        //     //     address: address, email: email, diet: diet, kindWords: kindWords
-        //     // })
-        //     //     .then((response) => {
-
-        //     //     })
-        //     //     .catch(error => {
-        //     //         setAddGuestError(true)
-        //     //         console.log('There was an error')
-        //     //     });
-        //     // addUser(mainGuestName, name);
-
-        // });
-        // const allGuest = 
-        for (const g of Object.values(guest)) {
-            const name = g.name;
-            if (name) {
-                try {
-                    const r = await axios.post('https://armentabe.com/addGuest', {
-                        mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
-                        address: address, email: email, diet: diet
+          Object.values(guest).forEach(guestName => {
+            const name = guestName.name;
+            axios.post('https://armentabe.com/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+                 address:address, email:email, diet: diet })
+                .then((response) => {
+                })
+                    .catch( error => {
+                        isError(true)
+                        if(error.response) {
+                            console.log('error response: ', error.response);
+                        } else if(error.request) {
+                            console.log('Error request: ', error.request);
+                        } else {
+                            console.log('Error message: ', error.message);
+                        }
                     });
-                } catch (error) {
-                    isError(true)
-                }
-
-            }
-
-        }
+        });
 
         onClose();
         setClose(!close);
     }
-
-    // async function addUser(mainGuestName, name) {
-    //     // try {
-    //         const r = await axios.post('https://yrdy.com/addGuest', {
-    //             mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
-    //             address: address, email: email, diet: diet, kindWords: kindWords
-    //         }).then((response) => {
-    //             console.log('No Error')
-    //             return true;
-    //         }).catch(error =>{
-    //             console.log('Error')
-    //             setAddGuestError(true);
-    //             return false;
-    //         });
-
-
-    //     // } catch (error) {
-    //     //     console('There is an error')
-    //     //     setAddGuestError(true);
-    //     //     return false;
-    //     // }
-
-    // }
 
     const requiredField = () => {
         return (guest[0].name.length && phoneNumber.length && address.length && email.length);

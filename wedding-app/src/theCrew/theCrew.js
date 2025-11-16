@@ -50,7 +50,7 @@ function TheCrew({ onClose }) {
     const jeki = (
         <div>
             <h1>Jeki</h1>
-            <p>Hello friends and family! I am so thrilled and honored to be surrounded by you all on our special day! There have been so many of you who have championed mine and Samuel's relationship since 2015 and for that I am forever grateful. I wanted to take time to give a special shoutout to my lovely bridemaids, many who have been rockin' with me since we were children (25+ years of friendship and counting). 
+            <p>"If you live to be a hundred, I want to live to be a hundred minus one day so I never have to live without you." <br/>~ Winnie-the-Pooh 
             </p>
         </div>
     );
@@ -198,7 +198,7 @@ function TheCrew({ onClose }) {
         <div>
             <h1>Sam</h1>
             <p>"I am no one special, just a common man with common thoughts. I've led a common life... But in one respect I've succeeded as gloriously as anyone who ever lived.
-                I've loved another with all my heart and soul, and for me that has always been enough" ~Noah Calhoun </p>
+                I've loved another with all my heart and soul, and for me that has always been enough" <br/>~ Noah Calhoun </p>
         </div>
     )
 

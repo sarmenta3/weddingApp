@@ -33,13 +33,13 @@
 }
 
 .popup-overlay-button {
-  position: fixed;
+    position: fixed;
     float: right;
     padding: 6px;
     width: auto; /* or a percentage like 50% for responsiveness */
     height: auto;
     font-size: 80%;
     color: black;
-    background-color: rgba(216, 19, 19, 0.493);
+    /* background-color: rgba(216, 19, 19, 0.493); */
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
 }

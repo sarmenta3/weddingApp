@@ -18,6 +18,7 @@ import maxPic from '../pictures/max.jpg'
 import timPic from '../pictures/tim.jpg'
 import noahPic from '../pictures/noah.jpg'
 import samPic from '../pictures/sam.jpg'
+import geoffPic from '../pictures/geoff.png'
 //the gents
 
 import FlipCard from '../flipCard/flipCard';
@@ -160,7 +161,17 @@ function TheCrew({ onClose }) {
      const carly = (
         <div>
             <h1>Carly</h1>
-            <p></p>
+            <p> Sam and I’s relationship has always been stereotypical super cool big brother, super annoying little sister. I grew up knowing Sam would always have my back. 
+            He listened to me when I was down and championed me in my accomplishments. I’m so incredibly honored I get to stand next to him and champion him in this next chapter. 
+            I love Sam and I love and adore Jelena. She has been a beacon of positivity and the most genuine person. I can’t imagine someone more supportive for my brother. 
+            I’m incredibly excited for this union and to be apart of such a sweet memorable day. <br/>I love you both ♥️</p>
+        </div>
+    )
+
+    const geoff = (
+        <div>
+            <h1>Geoff</h1>
+            <p>Bestie from the Westy! Since 2000</p>
         </div>
     )
 
@@ -188,7 +199,7 @@ function TheCrew({ onClose }) {
      const noah = (
         <div>
             <h1>Noah</h1>
-            <p></p>
+            <p>I am so honored to be part of this beautiful wedding congratulations Sam and Jelena can't wait till 8/8/2026</p>
         </div>
     )
 
@@ -299,6 +310,12 @@ function TheCrew({ onClose }) {
                         <FlipCard
                             frontImage={carlyPic}
                             backInfo={carly}
+                        />
+                    </div>
+                    <div className='member'>
+                        <FlipCard
+                            frontImage={geoffPic}
+                            backInfo={geoff}
                         />
                     </div>
                     <div className='member'>

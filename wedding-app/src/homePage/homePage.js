@@ -5,26 +5,14 @@ import RSVPForm from '../rsvpForm/rsvpForm';
 import StayAndFlights from '../PlacesToStayAndFlights/stayAndFlights';
 import TheCrew from '../theCrew/theCrew';
 import Activities from '../Activities/activities';
-import Popup from '../popUp/Popup';
 
 function HomePage() {
-    const homePagePw = 'EightEight26'
     const [showCrew, setShowCrew] = useState(false);
     const [showPlacesToStay, setPlacesToStay] = useState(false);
-    const [showFood, setFood] = useState(false);
     const [showRsvp, setRsvp] = useState(false);
     const [showActivities, setShowActivities] = useState(false);
     const [isSelected, setIsSelected] = useState(false)
 
-    const [isCreatGuestError, setIsCreatGuestError] = useState(false);
-
-    const [isPw, setisPw] = useState(false);
-
-    const handleSetPw = ( userPw ) => {
-        if (userPw.target.value === homePagePw){
-            setisPw(true)
-        }
-    }
 
     const handleShowCrewPopUp = () => {
         setIsSelected(!isSelected);
@@ -45,14 +33,6 @@ function HomePage() {
         setIsSelected(!isSelected);
         setShowActivities(!showActivities);
     }
-
-    const handleIsCreatGuestError = (isError) => {
-        setIsCreatGuestError(isError)
-    }
-    const closePopUp = () => {
-        setIsCreatGuestError(false)
-    }
-
 
     if(!isSelected) {
         return (
@@ -76,31 +56,6 @@ function HomePage() {
                 <button className="button" onClick={handleshowRsvp}> RSVP</button>
 
             </div>
-
-            { isCreatGuestError && <div>
-                    <Popup onClose={closePopUp}
-                        showClose={true}
-                    >
-                        <h3>Yikes!!!</h3>
-                        <p>Sorry, a error occured when trying to add you. Try again, or contact Jeki or Sam</p>
-                    </Popup>
-                </div>}
-
-            {/* { !isPw && <div>
-                    <Popup 
-                        onClose={closePopUp}
-                        showClose={false}
-                        >
-                         <label>
-                            Enter Password:
-                        </label>
-                        <input
-                            className='form-TextInput'
-                            type="password"
-                            onChange={(e) => handleSetPw(e)}
-                        />
-                    </Popup>
-                </div>}     */}
 
         </div>
     );
@@ -129,7 +84,6 @@ function HomePage() {
             {showRsvp && (
                 <RSVPForm
                     onClose={handleshowRsvp}
-                    isError = {handleIsCreatGuestError}
                 />
             )}
         </div>

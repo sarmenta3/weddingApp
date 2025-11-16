@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './rsvpForm.css';
 import axios from 'axios'
 
-function RSVPForm({ onClose, isError }) {
+function RSVPForm({ onClose}) {
 
     const [guest, setGuest] = useState([{ name: '' }]);
     const [phoneNumber, setPhoneNumber] = useState({ phoneNumber: '' });
@@ -63,7 +63,6 @@ function RSVPForm({ onClose, isError }) {
                 .then((response) => {
                 })
                     .catch( error => {
-                        isError(true)
                         if(error.response) {
                             console.log('error response: ', error.response);
                         } else if(error.request) {

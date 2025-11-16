@@ -8,6 +8,7 @@ import Activities from '../Activities/activities';
 import Popup from '../popUp/Popup';
 
 function HomePage() {
+    const homePagePw = 'EightEight26'
     const [showCrew, setShowCrew] = useState(false);
     const [showPlacesToStay, setPlacesToStay] = useState(false);
     const [showFood, setFood] = useState(false);
@@ -17,6 +18,13 @@ function HomePage() {
 
     const [isCreatGuestError, setIsCreatGuestError] = useState(false);
 
+    const [isPw, setisPw] = useState(false);
+
+    const handleSetPw = ( userPw ) => {
+        if (userPw.target.value === homePagePw){
+            setisPw(true)
+        }
+    }
 
     const handleShowCrewPopUp = () => {
         setIsSelected(!isSelected);
@@ -26,11 +34,6 @@ function HomePage() {
     const handlePlacesToStay = () => {
         setIsSelected(!isSelected);
         setPlacesToStay(!showPlacesToStay);
-    }
-
-    const handleFood = () => {
-        setIsSelected(!isSelected);
-        setFood(!showFood);
     }
 
     const handleshowRsvp = () => {
@@ -44,7 +47,6 @@ function HomePage() {
     }
 
     const handleIsCreatGuestError = (isError) => {
-        console.log('What is the error: ', isError) ;
         setIsCreatGuestError(isError)
     }
     const closePopUp = () => {
@@ -76,11 +78,29 @@ function HomePage() {
             </div>
 
             { isCreatGuestError && <div>
-                    <Popup onClose={closePopUp}>
+                    <Popup onClose={closePopUp}
+                        showClose={true}
+                    >
                         <h3>Yikes!!!</h3>
-                        <p>Sorry An error occured when trying to add you as guest. Try again, or contact Jeki or Sam</p>
+                        <p>Sorry, a error occured when trying to add you. Try again, or contact Jeki or Sam</p>
                     </Popup>
                 </div>}
+
+            { !isPw && <div>
+                    <Popup 
+                        onClose={closePopUp}
+                        showClose={false}
+                        >
+                         <label>
+                            Enter Password:
+                        </label>
+                        <input
+                            className='form-TextInput'
+                            type="password"
+                            onChange={(e) => handleSetPw(e)}
+                        />
+                    </Popup>
+                </div>}    
 
         </div>
     );

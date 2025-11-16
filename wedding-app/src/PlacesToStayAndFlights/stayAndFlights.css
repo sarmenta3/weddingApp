@@ -29,6 +29,7 @@
 ================================
 ================================ */
 .stayAndFlights-exit-button {
+    position: fixed;
     float: right;
     padding: 6px;
     width: auto; /* or a percentage like 50% for responsiveness */

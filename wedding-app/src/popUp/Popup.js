@@ -1,12 +1,13 @@
 import React from 'react';
 import './popup.css';
 
-const Popup = ({ children, onClose }) => {
+const Popup = ({ children, onClose, showClose }) => {
   return (
     <div className="popup-overlay">
-      <div className="popup-content">
+      <div className= {showClose ? "popup-content" : 'popup-content-pw'} >
         {children}
-        <button className ='button' onClick={onClose}>Close</button>
+        {showClose &&
+        <button className ='popup-overlay-button' onClick={onClose}>Close</button> }
       </div>
     </div>
   );

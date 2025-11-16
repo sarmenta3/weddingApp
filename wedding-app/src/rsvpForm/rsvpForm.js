@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './rsvpForm.css';
 import axios from 'axios'
-import Popup from '../popUp/Popup';
 
 function RSVPForm({ onClose, isError }) {
 
@@ -9,8 +8,7 @@ function RSVPForm({ onClose, isError }) {
     const [phoneNumber, setPhoneNumber] = useState({ phoneNumber: '' });
     const [address, setaddress] = useState({ address: '' });
     const [email, setEmail] = useState({ email: '' });
-    const [diet, setDiet] = useState({ diet: '' });
-    const [kindWords, setKindWords] = useState({ kindWords: '' });
+    const [diet, setDiet] = useState(null);
     const [close, setClose] = useState(false);
 
     const handleAddName = () => {
@@ -48,11 +46,6 @@ function RSVPForm({ onClose, isError }) {
         setDiet(diet);
     };
 
-    const handleKindWords = (e) => {
-        const kindWords = e.target.value;
-        setKindWords(kindWords);
-    };
-
     const handleRsvpClost = () => {
         onClose();
         setClose(!close);
@@ -73,15 +66,15 @@ function RSVPForm({ onClose, isError }) {
         //     });
         //     }catch(error){
         //         console.log(error)
-                
+
         //     }
-            
+
         //     // const r = await axios.post('https://armentaberrrr.com/addGuest', {
         //     //     mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
         //     //     address: address, email: email, diet: diet, kindWords: kindWords
         //     // })
         //     //     .then((response) => {
-                   
+
         //     //     })
         //     //     .catch(error => {
         //     //         setAddGuestError(true)
@@ -91,17 +84,20 @@ function RSVPForm({ onClose, isError }) {
 
         // });
         // const allGuest = 
-        for(const g of Object.values(guest) ){
+        for (const g of Object.values(guest)) {
             const name = g.name;
-             try{
-            const r =  await axios.post('https://armentabe.com/addGuest', {
-                mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
-                address: address, email: email, diet: diet, kindWords: kindWords
-            });
-            }catch(error){
-                isError(true)
-                console.log('We have an error')
+            if (name) {
+                try {
+                    const r = await axios.post('https://armentabedddd.com/addGuest', {
+                        mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+                        address: address, email: email, diet: diet
+                    });
+                } catch (error) {
+                    isError(true)
+                }
+
             }
+
         }
 
         onClose();
@@ -122,7 +118,7 @@ function RSVPForm({ onClose, isError }) {
     //             return false;
     //         });
 
-            
+
     //     // } catch (error) {
     //     //     console('There is an error')
     //     //     setAddGuestError(true);
@@ -132,7 +128,7 @@ function RSVPForm({ onClose, isError }) {
     // }
 
     const requiredField = () => {
-        return (guest[0].name.length && phoneNumber.length && address.length && email.length) && true;
+        return (guest[0].name.length && phoneNumber.length && address.length && email.length);
     }
 
     return (!close &&
@@ -151,6 +147,7 @@ function RSVPForm({ onClose, isError }) {
                     <div className='form-name'>
                         <label >
                             Name of Guest(s):
+                            <span style={{ color: 'red' }}>*</span>
                         </label>
                         <button className='form-addNameButton' onClick={handleAddName}>Add Guest</button>
                     </div>
@@ -183,6 +180,7 @@ function RSVPForm({ onClose, isError }) {
                     <div className='form-PhoneNumber'>
                         <label>
                             Phone Number:
+                            <span style={{ color: 'red' }}>*</span>
                         </label>
                         <input
                             className='form-TextInput'
@@ -194,6 +192,7 @@ function RSVPForm({ onClose, isError }) {
                     <div className='form-PhoneNumber'>
                         <label>
                             Address:
+                            <span style={{ color: 'red' }}>*</span>
                         </label>
                         <input
                             className='form-TextInput'
@@ -205,6 +204,7 @@ function RSVPForm({ onClose, isError }) {
                     <div className='form-email'>
                         <label>
                             Email:
+                            <span style={{ color: 'red' }}>*</span>
                         </label>
                         <input
                             className='form-TextInput'
@@ -216,6 +216,7 @@ function RSVPForm({ onClose, isError }) {
                     <label>Dietary Restrictions:</label>
                     <div >
                         <textarea
+                            maxLength={100}
                             style={{ height: '10vh', width: '90%' }}
                             placeholder='Please let us know if you have dietary restrictions.'
                             onChange={(e) => handleDiet(e)}

@@ -23,8 +23,9 @@ app.post('/addGuest', (req, res) => {
     const phoneNumber = req.body.phoneNumber;
     const address = req.body.address;
     const email = req.body.email;
-    db.query("INSERT INTO guestinformation (mainGuestName, guest, phoneNumber, address, email) VALUES (?,?,?,?,?)",
-        [mainGuestName, guest, phoneNumber, address, email], 
+    const diet = req.body.diet;
+    db.query("INSERT INTO guestinformation (mainGuestName, guest, phoneNumber, address, email, diet) VALUES (?,?,?,?,?,?)",
+        [mainGuestName, guest, phoneNumber, address, email, diet],
         (err, result) =>{
         if (err) {
             console.log(err);

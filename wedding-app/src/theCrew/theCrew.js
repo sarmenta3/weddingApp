@@ -199,7 +199,7 @@ function TheCrew({ onClose }) {
      const noah = (
         <div>
             <h1>Noah</h1>
-            <p>I am so honored to be part of this beautiful wedding congratulations Sam and Jelena can't wait till 8/8/2026</p>
+            <p>I am so honored to be part of this beautiful wedding congratulations Sam and Jelena can't wait till 8/8/2026.</p>
         </div>
     )
 
@@ -224,7 +224,7 @@ function TheCrew({ onClose }) {
 
                  {/* =============Start Of ladies========================= */}
                 <div className='theCrew-info'>
-                    <p>(Click on the photos for more details)</p>
+                    <p>Please click on the photos to read more details.</p>
                    
                    {/* Jelena */}
                     <h1>The Bride</h1>

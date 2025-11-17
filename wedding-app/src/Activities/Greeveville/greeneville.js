@@ -31,13 +31,13 @@ function Greeneville({onClose}) {
             <ul className="greeneville-list">
                 <li>Hike: 
                     <a href="https://share.google/SFLojTdUZ1ktNO2b6" target="_blank" rel="noreferrer"> 
-                    Margarette Falls Trail</a>
+                     Margarette Falls Trail</a>
                     </li>
                 <li>Explore: 
                     <a href="https://share.google/YRGi6kVPGrCSLb3jw" target="_blank" rel="noreferrer">
                     Andrew Johnson Homestead</a>
                     </li>
-                <li>Brew: 
+                <li>Brew:  
                     <a href="https://share.google/IAhAKkphQXrtVwAzV" target="_blank" rel="noreferrer">
                     The Gentry</a>
                     </li>
@@ -59,10 +59,10 @@ function Greeneville({onClose}) {
      const jonesborough = (
         <div>
             <h1>Jonesborough</h1>
-            <p><a href="https://maps.app.goo.gl/rs3MnvpaBb3yJpxQ7" target="_blank" rel="noreferrer">Jonesborough</a> is a cute little town with some good coffee and ice cream. They have an adorable downtown area with a lot of cutesy shops.
+            <p><a href="https://maps.app.goo.gl/rs3MnvpaBb3yJpxQ7" target="_blank" rel="noreferrer">Jonesborough</a> is a cute little town with some good coffee and ice cream. They have an adorable downtown area with a lot of cute shops.
                 Tennesee Hills, a distillary that has grown over the years, is located in this town and is one of our favorites.
                 If you happen to be sitting at the bar when a train goes by, $1 shots are comming your way. From here head to 
-                Johnson City for some more yummy food and events. Make sure you make a pit stop at Troyer's Mountain View Country Market/
+                Johnson City for some more yummy food and local events. Make sure you make a pit stop at Troyer's Mountain View Country Market/
                 Auntie Ruth's Doughnuts & Pretzels for a delicious little snack, it's right off the highway!
             </p>
              <p>Few things to do in this small town:</p>
@@ -90,8 +90,8 @@ function Greeneville({onClose}) {
      const johnsonCity = (
         <div>
             <h1>Johnson City</h1>
-            <p>"Walking to the south out of Roanoke caught a trucker out of Philly, had a nice long toke
-            But he's a-headed west from the Cumberland gap to 
+            <p>"Walking to the south out of Roanoke caught a trucker out of Philly, had a nice long toke.
+            But he's a-headed West from the Cumberland gap to 
             <a href="https://maps.app.goo.gl/aDvkhENbj1FwkyQ98" target="_blank" rel="noreferrer"> Johnson City, Tennessee." </a>      ~ Darius Rucker.</p>
 
             <p>This is the biggest of the small towns. You will find night life, food, coffee, sports bars, and strong drinks. In August, the town usually has concerts
@@ -130,8 +130,8 @@ function Greeneville({onClose}) {
                 {/* exit button  and close function*/}
                 <button className='greeneville-exit-button' onClick={() => handleSetClose()}>X</button>
                 <div className="greeneville-info">
-                    <p>Tell them about the Vol</p>
-                    <p>(Click on the photos for more details)</p>
+                    <p>Tell 'em about the Vol</p>
+                    <p>Please click on the photos to read more details.</p>
                 </div>
 
                 {/*We have reached the Vol*/}
@@ -148,7 +148,7 @@ function Greeneville({onClose}) {
 
                  {/*Jonesborough*/}
                 <div className='greeneville-info'>
-                    <p>Jonesborough Things (~30 min from Greeneville)</p>
+                    <p>Jonesborough Things (~30 min away from Greeneville)</p>
                     <div className='member'>
                         <FlipCard
                             frontImage={jonesboroughPic}
@@ -159,7 +159,7 @@ function Greeneville({onClose}) {
 
                  {/*Johnson city*/}
                 <div className='greeneville-info'>
-                    <p>Johnson City Things (~20 min from Jonesborough)</p>
+                    <p>Johnson City Things (~20 min away from Jonesborough)</p>
     
                     <div className='member'>
                         <FlipCard

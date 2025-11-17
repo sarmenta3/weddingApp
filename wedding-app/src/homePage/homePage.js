@@ -49,7 +49,7 @@ function HomePage() {
             <div className="BackGround">
 
                 <div className="intro">
-                    <h3>Thank you for your love and support! We cannot wait to celebrate with you all in the same town where we got engaged!</h3>
+                    <h3>Thank you for your love and support! We cannot wait to celebrate with you all in the same town where we got engaged! Please RSVP by no later than April 1, 2026 (no this is not a joke). </h3>
                     <h3>Date: August 8, 2026</h3>
                     <h3>Venue: <a href="https://johnstonhomeplace.com/" target="_blank" rel="noreferrer">
                         Johnston Home Place

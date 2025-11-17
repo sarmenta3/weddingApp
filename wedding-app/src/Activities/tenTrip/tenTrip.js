@@ -77,7 +77,7 @@ function TenTrip({onClose}) {
                 <button className='tenTrip-exit-button' onClick={() => handleSetClose()}>X</button>
                 <div className="tenTrip-info">
                     <p>If you would like to make an adventure out of this trip this is what we would do...</p>
-                    <p>(Click on the photos for more details)</p>
+                    <p>Please click on the photos to read more details.</p>
                 </div>
                 
                 {/* Nashville */}
@@ -124,7 +124,7 @@ function TenTrip({onClose}) {
                 {/*We have reach the Vull*/}
                 <div className='tenTrip-info'>
                     <p>Aww, home sweet home! You have now reached what Tennesseans call Tennesee!</p>
-                    <p>Blue skies, never ending days, and God's country.</p>
+                    <p>Never ending skies, Blue Ridge Mountains, warm summer nights, you have officially arrived to God's country.</p>
                     <div className='member'>
                         <FlipCard
                             frontImage={home}

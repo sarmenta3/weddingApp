@@ -67,7 +67,6 @@ function RSVPForm({ onClose }) {
     const isGuestNameError = () => {
         var isNameError = false;
         guest.forEach(guestName => {
-            console.log(guestName.name.length)
             if (!guestName.name.length) {
                 isNameError = true;
             }
@@ -81,6 +80,7 @@ function RSVPForm({ onClose }) {
         let mainGuestName = guest[0].name; // main group name
 
         // service call to add all users to the DB 
+        try{
         const servResponse = Object.values(guest).map(async guestName => {
             const name = guestName.name;
             const respone = await axios.post('https://armentabe.com/addGuest', {
@@ -90,16 +90,41 @@ function RSVPForm({ onClose }) {
 
             return respone; // the response 
         });
-
-        // check response
+        
+         // check response
         try {
             const resultArray = await Promise.all(servResponse); // chec if there is an error
         } catch (error) { // if there is an error catch it 
+            console.log('Catch error')
             handleIsError(true); // set that there is an error
         } finally {
+            console.log('Finally')
             setClose(true); // close the original rsvp
             handleShowPopup(true); // show the pop up of pass or fail
         }
+
+    }catch(error) {
+        console.log('Error')
+        // handleIsError(true); // set that there is an error
+     }finally {
+        setClose(true); // close the original rsvp
+        handleShowPopup(true); // show the pop up of pass or fail
+
+     }
+    //finally{
+    //     setClose(true); // close the original rsvp
+    //     handleShowPopup(true); // show the pop up of pass or fail
+    // }
+
+        // check response
+        // try {
+        //     const resultArray = await Promise.all(servResponse); // chec if there is an error
+        // } catch (error) { // if there is an error catch it 
+        //     handleIsError(true); // set that there is an error
+        // } finally {
+        //     setClose(true); // close the original rsvp
+        //     handleShowPopup(true); // show the pop up of pass or fail
+        // }
 
 
         // https://www.armentabe.com/
@@ -108,7 +133,7 @@ function RSVPForm({ onClose }) {
         //  const anyError = await Object.values(guest).map(guestName => {
         //     const name = guestName.name;
         //     console.log('Name: ', name)
-        //     axios.post('https://armentabe.com/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
+        //     axios.post('http://localhost:8080/addGuest', { mainGuestName: mainGuestName, name: name, phoneNumber: phoneNumber,
         //          address:address, email:email, diet: diet })
         //         .then((response) => {
         //             console.log(response)
@@ -122,6 +147,8 @@ function RSVPForm({ onClose }) {
         //                 }
         //             });
         // });
+
+        // setClose(true);
 
     }
 

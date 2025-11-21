@@ -32,7 +32,7 @@
   scrollbar-width: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 700px;
 }
 
 /* ================================
@@ -42,12 +42,12 @@
 .adventure-exit-button {
 position: fixed;
     float: right;
-    padding: 6px;
+    padding: 9px;
     width: auto; /* or a percentage like 50% for responsiveness */
     height: auto;
     font-size: 80%;
     color: black;
-    background-color: rgba(216, 19, 19, 0.493);
+    background-color: rgba(216, 19, 19);
     font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
 }
 

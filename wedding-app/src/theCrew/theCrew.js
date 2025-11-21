@@ -18,7 +18,7 @@ import maxPic from '../pictures/max.jpg'
 import timPic from '../pictures/tim.jpg'
 import noahPic from '../pictures/noah.jpg'
 import samPic from '../pictures/sam.jpg'
-import geoffPic from '../pictures/geoff.png'
+import geoffPic from '../pictures/geoff.jpg'
 //the gents
 
 import FlipCard from '../flipCard/flipCard';
@@ -119,7 +119,11 @@ function TheCrew({ onClose }) {
     const lexi = (
         <div>
             <h1>Lexi</h1>
-            <p></p>
+            <p>Jelena has been one of my best friends since our paths first crossed in middle school. Since then, she has been like the sister I’ve never had. 
+                Throughout the years we’ve shared countless laughs, a few tears and untold adventures. 
+                She can truly light up a room and is one of the most genuine and charismatic people I know 
+                (not to mention the best sourdough bread baker and fur mamma). I couldn’t have imagined a better partner for her than Sam and it’s been such a 
+                privilege to watch their love story unfold. Cheers to the happy couple! </p>
         </div>
     )
 
@@ -218,7 +222,7 @@ function TheCrew({ onClose }) {
         <div className='theCrewBackground'>
 
             <div className='theCrew-content'>
-
+                    
                 {/* exit button  and close function*/}
                 <button className='theCrew-exit-button' onClick={() => handleSetClose()}>X</button>
 

@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
 import './theCrew.css';
 
 // ladies
 import jekiPic from '../pictures/jeki.jpg'
 import nikkiPic from '../pictures/nikki.jpg'
-import liaPic from '../pictures/lia.JPG'
+import liaPic from '../pictures/liaDisco.jpg'
 import crystalPic from '../pictures/crystal.jpg'
 import cassPic from '../pictures/cass.jpg'
 import lexiPic from '../pictures/lexi.jpeg'

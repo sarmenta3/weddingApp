@@ -4,7 +4,7 @@ import './theCrew.css';
 // ladies
 import jekiPic from '../pictures/jeki.jpg'
 import nikkiPic from '../pictures/nikki.jpg'
-import liaPic from '../pictures/lia.jpg'
+import liaPic from '../pictures/lia.JPG'
 import crystalPic from '../pictures/crystal.jpg'
 import cassPic from '../pictures/cass.jpg'
 import lexiPic from '../pictures/lexi.jpeg'
@@ -28,21 +28,7 @@ function TheCrew({ onClose }) {
 
     const [close, setClose] = useState(false);
 
-    useEffect(() => {
-        const handlePopstate = (event) => {
-           onClose();
-           setClose(!close)
-        };
-
-        window.addEventListener('popstate', handlePopstate);
-
-        return () => {
-          window.removeEventListener('popstate', handlePopstate);
-        };
-      }, [close]); // Add navigate to dependency array if used
-
     const handleSetClose = () => {
-
         onClose();
         setClose(!close);
     }
@@ -196,7 +182,15 @@ function TheCrew({ onClose }) {
      const tim = (
         <div>
             <h1>Tim</h1>
-            <p></p>
+            <p>Sam and I have almost died together at least one time. At least that’s the official story. I could leave that there, and it would suffice to say “yeah, they’re close”. 
+                A shared experience such as near death one creates a bond that is near unbreakable. However, with Sam, this was just another day. 
+                Our relationship was already cemented through decades of shared experiences and “cousinship”. In fact, Sam has always been more of a big brother to me if anything, and he has been someone that I look up to immensely.
+                 I guess it all started with some of my earliest memories with Sam… Taking baths together….. as kids of course. He always had the coolest bath toys! 
+                 As we grew up some of my fondest memories revolve around sleepovers at Uncle Manuel’s house and Sam body slamming me as we role played WWF in the living room. 
+                 (Mom, if you’re reading, we NEVER EVER watched WWF). So many of my firsts in life have been because of Sam. My first time at a high school party (even though I wasn’t in high school), my first time TP-ing houses…. 
+                 The list goes on, but you get the picture. Of course, these were our younger days, and we have both matured. As life continued, Sam was always one of the first people I would talk to when big life events would come, and he has always been there to listen and encourage. 
+                 I am so honored to be a part of this wedding, and I am so happy to see the love that Jelena and Sam share. Truly, I have seen Sam at his happiest when Jelena is around. Thank you, Sam, for being there for me as a role model and encourager through many of life’s firsts. 
+                 Can’t wait to be there for you on your first day of marriage! </p>
         </div>
     )
 

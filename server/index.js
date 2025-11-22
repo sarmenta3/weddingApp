@@ -28,7 +28,7 @@ app.post('/addGuest', (req, res) => {
         [mainGuestName, guest, phoneNumber, address, email, diet],
         (err, result) =>{
         if (err) {
-           res.status(500).json({error: true});
+           res.send(false)
         } else {
             res.send(true)
        }

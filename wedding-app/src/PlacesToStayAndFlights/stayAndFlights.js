@@ -63,6 +63,7 @@ function StayAndFlights({ onClose }) {
                     </p>
 
                     <img
+                        alt=''
                         className='imageWidth'
                         src={generalMorgan}
                     />
@@ -72,6 +73,7 @@ function StayAndFlights({ onClose }) {
                     <p>Located ~14 min away from the venue and from Downtown Greeneville. We will be checking this place out in November and adding more details!
                     </p>
                     <img
+                        alt=''
                         className='imageWidth'
                         src={BluffsCabin}
                     />
@@ -83,6 +85,7 @@ function StayAndFlights({ onClose }) {
                     <p>Located ~18 min away from the venue and 10 min away from Downtown Greeneville. We will be checking this place out in November and adding more details!
                     </p>
                     <img
+                        alt=''
                         className='imageWidth'
                         src={HamptonInn}
                     />
@@ -94,6 +97,7 @@ function StayAndFlights({ onClose }) {
                     <p>Located ~18 min away from the venue and 10 min away from Downtown Greeneville. We will be checking this place out in November and adding more details!
                     </p>
                     <img
+                        alt=''
                         className='imageWidth'
                         src={qualityInn}
                     />

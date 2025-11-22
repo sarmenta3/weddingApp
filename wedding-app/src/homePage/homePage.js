@@ -54,7 +54,7 @@ function HomePage() {
                     <h3>Venue: <a href="https://johnstonhomeplace.com/wp-content/uploads/Homeplace-Wedding-Venue-Video-Tour.mp4" target="_blank" rel="noreferrer">
                         Johnston Home Place
                     </a></h3>
-                    <h3>Address: <a>240 Joe Johnston Ln, Greeneville, TN 37743</a></h3>
+                    <h3>Address: 240 Joe Johnston Ln, Greeneville, TN 37743</h3>
                 </div>
                 <div className="ButtonInto">
                     <button className="button" onClick={handleShowCrewPopUp}> Meet The Crew</button>

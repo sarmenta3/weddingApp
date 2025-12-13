@@ -62,7 +62,7 @@ function HomePage() {
                     <br />
                     <button className="button" onClick={handleshowRsvp}> RSVP</button>
                     <br/>
-                    <button className="button" onClick={handleAttire}> Attire/Registry</button>
+                    <button className="button" onClick={handleAttire}> Attire & Registry</button>
 
                 </div>
 

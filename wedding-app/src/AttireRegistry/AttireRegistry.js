@@ -56,6 +56,9 @@ function AttireRegistry({ onClose }) {
                         Your presence is our greatest gift, but should you wish to contribute, a donation to our honeymoon fund is greatly appreciated.
                     </p>
 
+                    <p>If you are not able to make it and would like to send us a card please let us know and we will provide our address. We love receiving cards
+                        and hearing loving words. Thanks!</p>
+
                     <img
                         alt=''
                         className='imageWidth'

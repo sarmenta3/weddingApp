@@ -1,0 +1,83 @@
+.stayAndFlightsBackground {
+   position: static; /* Essential for positioning the pseudo-element */
+      width: 100vw;
+      height: 100vh; /* Or whatever dimensions you need */
+      overflow: auto; /* To prevent the pseudo-element from overflowing if it has a larger size */
+      isolation: isolate; /* Creates a new stacking context for proper layering */
+      scrollbar-color: black;
+}
+
+.stayAndFlightsBackground:before {
+  content:'';
+  position: absolute;
+  background-image: url('../pictures/godsCountry.jpg');
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode:screen;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  /* opacity: .5; */
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  scrollbar-color: black;
+}
+
+/* ================================
+===============buttons==========
+================================
+================================ */
+.stayAndFlights-exit-button {
+    position: fixed;
+    float: right;
+    padding: 6px;
+    width: auto; /* or a percentage like 50% for responsiveness */
+    height: auto;
+    font-size: 80%;
+    color: black;
+    background-color: rgba(216, 19, 19);
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+}
+
+.flights {
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+    color: black;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 15px 0px 15px 0px;
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    padding: 5px;
+    max-width: 350px;
+    border: 2px solid black;
+}
+
+.flights-list {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.placesToStay {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    width: 80%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 15px 0px 15px 0px;
+    font-family: 'Alegreya SC',Georgia,"Times New Roman",serif;
+    padding: 5px;
+    max-width: 350px;
+    border: 2px solid black;
+}
+
+.imageWidth  {
+  width: 70%
+}

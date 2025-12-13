@@ -5,17 +5,16 @@ import RSVPForm from '../rsvpForm/rsvpForm';
 import StayAndFlights from '../PlacesToStayAndFlights/stayAndFlights';
 import TheCrew from '../theCrew/theCrew';
 import Activities from '../Activities/activities';
+import AttireRegistry from '../AttireRegistry/AttireRegistry'
 
 
 function HomePage() {
     const [showCrew, setShowCrew] = useState(false);
     const [showPlacesToStay, setPlacesToStay] = useState(false);
     const [showRsvp, setRsvp] = useState(false);
+    const [showAttire, setAttire] = useState(false);
     const [showActivities, setShowActivities] = useState(false);
-    const [isSelected, setIsSelected] = useState(false)
-
-    // const [isCreatGuestError, setIsCreatGuestError] = useState(null);
-
+    const [isSelected, setIsSelected] = useState(false);
 
     const handleShowCrewPopUp = () => {
         setIsSelected(!isSelected);
@@ -37,12 +36,10 @@ function HomePage() {
         setShowActivities(!showActivities);
     }
 
-    // const handleIsCreatGuestError = (isError) => {
-    //     setIsCreatGuestError(isError)
-    // }
-    // const closePopUp = () => {
-    //     setIsCreatGuestError(null)
-    // }
+    const handleAttire = () => {
+        setIsSelected(!isSelected);
+        setAttire(!isSelected)
+    }
 
     if (!isSelected) {
         return (
@@ -64,31 +61,14 @@ function HomePage() {
                     <button className="button" onClick={handleShowActivites}> Activities </button>
                     <br />
                     <button className="button" onClick={handleshowRsvp}> RSVP</button>
+                    <br/>
+                    <button className="button" onClick={handleAttire}> Attire/Registry</button>
 
                 </div>
 
-                {/* {isCreatGuestError === false && <div>
-                    <Popup onClose={closePopUp}
-                        showClose={true}
-                    >
-                        <h3>Awesome!!!</h3>
-                        <p>RSVP has been Sent! Can't wait to see Y'all</p>
-                    </Popup>
-                </div>}
-
-                {isCreatGuestError && <div>
-                    <Popup onClose={closePopUp}
-                        showClose={true}
-                    >
-                        <h3>Yikes!!!</h3>
-                        <p>Sorry, a error occured when trying to add you. Try again, or contact Jeki or Sam</p>
-                    </Popup>
-                </div>} */}
-
-
-
             </div>
         );
+
     } else {
         return (
             <div>
@@ -114,6 +94,12 @@ function HomePage() {
                 {showRsvp && (
                     <RSVPForm
                         onClose={handleshowRsvp}
+                    />
+                )}
+
+                 {showAttire && (
+                    <AttireRegistry
+                        onClose={handleAttire}
                     />
                 )}
             </div>

@@ -70,7 +70,7 @@ function StayAndFlights({ onClose }) {
 
                     {/* Nolichuckey Bluffs */}
                     <h5><a href="https://www.tennessee-cabins.com/" target="_blank" rel="noreferrer">Nolichuckey Bluffs Cabins</a></h5>
-                    <p>Located ~14 min away from the venue and from Downtown Greeneville. We will be checking this place out in November and adding more details!
+                    <p>Located ~14 min away from the venue and from Downtown Greeneville.
                     </p>
                     <img
                         alt=''
@@ -82,7 +82,7 @@ function StayAndFlights({ onClose }) {
                     <h5><a href="https://www.hilton.com/en/hotels/grvtnhx-hampton-greeneville/?SEO_id=GMB-AMER-HX-GRVTNHX&y_source=1_MjA4MzY0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D" target="_blank" rel="noreferrer">
                     Hampton Inn Greeneville
                     </a></h5>
-                    <p>Located ~18 min away from the venue and 10 min away from Downtown Greeneville. We will be checking this place out in November and adding more details!
+                    <p>Located ~18 min away from the venue and 10 min away from Downtown Greeneville.
                     </p>
                     <img
                         alt=''
@@ -94,7 +94,7 @@ function StayAndFlights({ onClose }) {
                     <h5><a href="https://www.choicehotels.com/tennessee/greeneville/quality-inn-hotels/tn673?mc=llgoxxpx" target="_blank" rel="noreferrer">
                     Quality Inn Greeneville - Tusculum
                     </a></h5>
-                    <p>Located ~18 min away from the venue and 10 min away from Downtown Greeneville. We will be checking this place out in November and adding more details!
+                    <p>Located ~18 min away from the venue and 10 min away from Downtown Greeneville.
                     </p>
                     <img
                         alt=''

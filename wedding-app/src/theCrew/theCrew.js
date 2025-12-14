@@ -161,7 +161,8 @@ function TheCrew({ onClose }) {
     const geoff = (
         <div>
             <h1>Geoff</h1>
-            <p>Bestie from the Westy! Since 2000</p>
+            <p>A Friend loves at all times, and a brother is born for a time of Adversity.<br/>~Proverbs 17:17</p>
+            <p>We escaped the dark to enjoy the light, so greatful to be a part of your future.</p>
         </div>
     )
 

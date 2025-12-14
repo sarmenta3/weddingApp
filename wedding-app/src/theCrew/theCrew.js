@@ -162,7 +162,7 @@ function TheCrew({ onClose }) {
         <div>
             <h1>Geoff</h1>
             <p>A friend loves at all times, and a brother is born for a time of adversity.<br/>~Proverbs 17:17</p>
-            <p>We escaped the dark to enjoy the light, so greatful to be a part of your future.</p>
+            <p>We escaped the dark to enjoy the light, so grateful to be a part of your future.</p>
         </div>
     )
 

@@ -62,7 +62,7 @@ function HomePage() {
 
     const getGuest = async () => {
         try {
-            const respone = await axios.get('http://localhost:8080/getGuest');
+            const respone = await axios.get('https://armentabe.com/getGuest');
             setGuestList(respone.data)
         } catch (err) {
             console.log('There was an error')

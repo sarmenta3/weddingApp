@@ -53,6 +53,10 @@ function Greeneville({ onClose }) {
                 <li>Food: <a href="https://share.google/H7NbI2m4xSC1xBE3g" target="_blank" rel="noreferrer">
                     Thai's Joy</a>
                 </li>
+                <li>Civil War Trail:
+                    <a href="https://civilwartrails.org/" target="_blank" rel="noreferrer">
+                        Trail</a>
+                </li>
             </ul>
         </div>
     );

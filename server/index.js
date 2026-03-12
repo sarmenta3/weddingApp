@@ -10,8 +10,8 @@ app.use(cors());
 
 var db = mysql.createPool({
     connectionLimit: 10,
-    host: 'localhost', // when local: localhost
-    user: 'appUser',
+    host: 'localhost', // chnage back to localhost for ops and 18.221.45.34 for local 
+    user: 'appUser', //change back to appUser for ops and weddingUser for local
     password: 'EightEight26!',
     database:'wedding_guest',
     port: 3306 // when local: comment this out
@@ -34,6 +34,18 @@ app.post('/addGuest', (req, res) => {
        }
     })                                          
 })
+
+app.get('/getGuest', (req, res) => {
+
+    db.query('SELECT guest FROM guestinformation', (err, result) => {
+            if(err) {
+                res.status(500).send('There was an error getting guest');
+            }
+              res.json(result)
+        }
+    )
+})
+
 
 const port = 8080; //when local: 8080
 app.listen(port, () => {

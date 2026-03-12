@@ -34,9 +34,21 @@ function TenTrip({ onClose }) {
             <p>Chattanooga is the perfect mix of city  and outdoors. There are museums, great food, and so many lovely
                 walking spots. The city due to flooding has been built on top of itself over the centeries. You are in a city
                 surounded by the Appalachian Mountains. Hikes are abundant and food is plentiful. Fun Fact: Sam is planning to compete in his first
-                70.1 Ironman here in May 2026! Also, Sam's lovely sister and her husband live here and love it! It's kind of like
+                70.3 Ironman here in May 2026! Also, Sam's lovely sister and her husband live here and love it! It's kind of like
                 the SF or Austin of the South...Stay weird!
+                <br/><br/>
+                If you like history there is Civil War trail that runs through Tennessee. If you fly in here you can start the trail.
             </p>
+
+            <p>
+                Chattanooga Activities:
+            </p>
+            <ul className="greeneville-list">
+                <li>Civil War Trail:
+                    <a href="https://civilwartrails.org/" target="_blank" rel="noreferrer">
+                        Trail</a>
+                </li>
+            </ul>
         </div>
     );
 
@@ -54,8 +66,19 @@ function TenTrip({ onClose }) {
             </p>
 
             <p>
-                Abridged Beer Company, is another favorite food place of ours. There are two locations, one which is a small outdoor brewery that does not have the full menu, but regardless they still serve really good appetizers and food. The bigger location is their restaurant that has
+                Abridged Beer Company, is another favorite food place of ours. 
+                There are two locations, one which is a small outdoor brewery that does not have the full menu, 
+                but regardless they still serve really good appetizers and food. 
+                The bigger location is their restaurant that has
                 their full beer and food menu.
+                <br/><br/>
+                A Dopo Sourdough Pizza can get packed and you would want to make a reservation... it's THAT good!
+                <br/><br/>
+                Fort Dickerson itself is small, but there are some nice hiking trails around it.
+                <br/><br/>
+                Ijams Nature Center has a $5 parking fee.
+                <br/><br/>
+                If you like history, there is Civil War trail that runs through Tennessee. If you fly in here you can start the trail here.
             </p>
 
             <p>Knoxville Activities:</p>
@@ -74,9 +97,17 @@ function TenTrip({ onClose }) {
                     <a href="https://maps.app.goo.gl/fNWcdaFLwaP1hYWn6" target="_blank" rel="noreferrer">
                         Fort Dickerson Park</a>
                 </li>
+                <li>
+                    <a href="https://share.google/z3CruG0FFKxd9nf7s" target="_blank" rel="noreferrer">
+                        Ijams Nature Center</a>
+                </li>
                 <li>Art:
                     <a href="https://maps.app.goo.gl/PjJ4sjMM6W5MeEgd9" target="_blank" rel="noreferrer">
                         Knoxville Museum of Art</a>
+                </li>
+                <li>Civil War Trail:
+                    <a href="https://civilwartrails.org/" target="_blank" rel="noreferrer">
+                        Trail</a>
                 </li>
             </ul>
 

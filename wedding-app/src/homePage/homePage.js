@@ -104,10 +104,21 @@ function HomePage() {
                     <h3>Address: 240 Joe Johnston Ln, Greeneville, TN 37743</h3>
                 </div>
 
+                <div className="ButtonInto">
+                    <button className="button" onClick={handleShowCrewPopUp}> Meet The Crew</button>
+                    <br />
+                    <button className="button" onClick={handlePlacesToStay}> Flights and Places to Stay</button>
+                    <br />
+                    <button className="button" onClick={handleShowActivites}> Activities </button>
+                    <br />
+                    <button className="button" onClick={handleAttire}> Attire & Registry</button>
+                    <br /> 
+                </div>
+
                 <div className='intro'>
                     <h5>
                         Guest List: <br/> 
-                        Check the list to see if you have RSVP'd <br/>
+                        Check the list to see if you have RSVP'd<br/>
                     </h5>
                                     
                         {/* Search Input */}
@@ -153,21 +164,6 @@ function HomePage() {
                         <b>Guest Count Total:</b> {guestList.length}
 
                 </div>
-
-                <div className="ButtonInto">
-                    <button className="button" onClick={handleShowCrewPopUp}> Meet The Crew</button>
-                    <br />
-                    <button className="button" onClick={handlePlacesToStay}> Flights and Places to Stay</button>
-                    <br />
-                    <button className="button" onClick={handleShowActivites}> Activities </button>
-                    <br />
-                    <button className="button" onClick={handleshowRsvp}> RSVP</button>
-                    <br />
-                    <button className="button" onClick={handleAttire}> Attire & Registry</button>
-                    <br /> 
-                </div>
-
-
 
             </div>
         );
